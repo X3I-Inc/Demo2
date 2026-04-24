@@ -1,0 +1,2322 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\emilr\demo2\build\demo2.elf C:\Users\emilr\demo2\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'COM9'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b7b2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 22 2026 12:22:34[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ce58h ( 52824) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001ce80 vaddr=3fc93c00 size=03198h ( 12696) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=18468h ( 99432) map[0m
+[0;32mI (119) esp_image: segment 3: paddr=00038490 vaddr=3fc96d98 size=000b4h (   180) load[0m
+[0;32mI (119) esp_image: segment 4: paddr=0003854c vaddr=40374000 size=0fb70h ( 64368) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=000480c4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (154) cpu_start: Multicore app[0m
+[0;32mI (163) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (165) app_init: Application information:[0m
+[0;32mI (169) app_init: Project name:     demo2[0m
+[0;32mI (173) app_init: App version:      149042f-dirty[0m
+[0;32mI (177) app_init: Compile time:     Apr 23 2026 23:59:57[0m
+[0;32mI (182) app_init: ELF file SHA256:  9743d397c...[0m
+[0;32mI (186) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (190) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (194) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (198) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (202) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (208) heap_init: At 3FC97870 len 00051EA0 (327 KiB): RAM[0m
+[0;32mI (213) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (218) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (224) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (230) spi_flash: detected chip: gd[0m
+[0;32mI (232) spi_flash: flash io: dio[0m
+[0;33mW (235) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (247) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (257) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (263) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (270) main_task: Started on CPU0[0m
+[0;32mI (280) main_task: Calling app_main()[0m
+[0;32mI (330) LCD: LCD initialised (4-bit parallel)[0m
+[0;32mI (330) BTN: Buttons initialised (GPIO 48, 47, 40)[0m
+[0;33mW (330) AS5600: AS5600 not responding on I2C bus[0m
+[0;33mW (330) APP: AS5600 init failed – encoder page will show errors[0m
+[0;32mI (430) NRF24: Initial CFG readback: 0x0E (expected 0x08 after power-up)[0m
+[0;32mI (430) NRF24: === NRF24 Config Readback ===[0m
+[0;32mI (430) NRF24: CFG     = 0x0E (expected 0x0E)[0m
+[0;32mI (430) NRF24: EN_AA   = 0x01 (expected 0x01)[0m
+[0;32mI (430) NRF24: EN_RX   = 0x01 (expected 0x01)[0m
+[0;32mI (440) NRF24: SETUP_AW= 0x03 (expected 0x03)[0m
+[0;32mI (440) NRF24: RF_CH   = 76    (expected 76)[0m
+[0;32mI (450) NRF24: RF_SETUP= 0x06 (expected 0x06)[0m
+[0;32mI (450) NRF24: STATUS  = 0x0E[0m
+[0;32mI (450) NRF24: FEATURE = 0x06 (expected 0x06)[0m
+[0;32mI (460) NRF24: DYNPD   = 0x01 (expected 0x01)[0m
+[0;32mI (460) NRF24: RX_PW_P0= 20[0m
+[0;32mI (460) NRF24: =============================[0m
+[0;32mI (470) NRF24: NRF24L01 initialized OK.[0m
+[0;32mI (470) ENC_MUX: PCA9548A mux found at 0x70 !![0m
+[0;32mI (470) ENC_MUX: Starting encoder task...[0m
+[0;32mI (980) ENC_MUX: Encoder mux task started – reading 4 encoders on channels 0,1,6,7[0m
+[0;32mI (980) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 18.4° (209)[0m
+[0;32mI (1180) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[0;32mI (1380) ENC_MUX: ENC0(ch0): 315.3° (3587)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[0;32mI (1580) ENC_MUX: ENC0(ch0): 335.7° (3819)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[0;32mI (1680) UI: UI initialised[0m
+[1;31mE (1680) UI: Failed reading I2C Angle![0m
+[0;32mI (1780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (1780) UI: Failed reading I2C Angle![0m
+[1;31mE (1880) UI: Failed reading I2C Angle![0m
+[0;32mI (1980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.5° (222)[0m
+[1;31mE (1980) UI: Failed reading I2C Angle![0m
+[1;31mE (2080) UI: Failed reading I2C Angle![0m
+[0;32mI (2180) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (2180) UI: Failed reading I2C Angle![0m
+[1;31mE (2280) UI: Failed reading I2C Angle![0m
+[0;32mI (2380) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (2380) UI: Failed reading I2C Angle![0m
+[1;31mE (2480) UI: Failed reading I2C Angle![0m
+[0;32mI (2580) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (2580) UI: Failed reading I2C Angle![0m
+[1;31mE (2680) UI: Failed reading I2C Angle![0m
+[0;32mI (2780) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (2780) UI: Failed reading I2C Angle![0m
+[1;31mE (2880) UI: Failed reading I2C Angle![0m
+[0;32mI (2980) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (2980) UI: Failed reading I2C Angle![0m
+[1;31mE (3080) UI: Failed reading I2C Angle![0m
+[0;32mI (3180) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (3180) UI: Failed reading I2C Angle![0m
+[1;31mE (3280) UI: Failed reading I2C Angle![0m
+[0;32mI (3380) ENC_MUX: ENC0(ch0): 343.7° (3910)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (3380) UI: Failed reading I2C Angle![0m
+[1;31mE (3480) UI: Failed reading I2C Angle![0m
+[0;32mI (3580) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (3580) UI: Failed reading I2C Angle![0m
+[1;31mE (3680) UI: Failed reading I2C Angle![0m
+[0;32mI (3780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (3780) UI: Failed reading I2C Angle![0m
+[1;31mE (3880) UI: Failed reading I2C Angle![0m
+[0;32mI (3980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 358.9° (4083)[0m
+[1;31mE (3980) UI: Failed reading I2C Angle![0m
+[1;31mE (4080) UI: Failed reading I2C Angle![0m
+[0;32mI (4180) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (4180) UI: Failed reading I2C Angle![0m
+[1;31mE (4280) UI: Failed reading I2C Angle![0m
+[0;32mI (4380) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (4380) UI: Failed reading I2C Angle![0m
+[1;31mE (4480) UI: Failed reading I2C Angle![0m
+[0;32mI (4580) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (4580) UI: Failed reading I2C Angle![0m
+[1;31mE (4680) UI: Failed reading I2C Angle![0m
+[0;32mI (4780) ENC_MUX: ENC0(ch0): 332.1° (3778)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (4780) UI: Failed reading I2C Angle![0m
+[1;31mE (4880) UI: Failed reading I2C Angle![0m
+[0;32mI (4980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (4980) UI: Failed reading I2C Angle![0m
+[1;31mE (5080) UI: Failed reading I2C Angle![0m
+[0;32mI (5180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (5180) UI: Failed reading I2C Angle![0m
+[1;31mE (5280) UI: Failed reading I2C Angle![0m
+[0;32mI (5380) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (5380) UI: Failed reading I2C Angle![0m
+[1;31mE (5480) UI: Failed reading I2C Angle![0m
+[0;32mI (5580) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (5580) UI: Failed reading I2C Angle![0m
+[1;31mE (5680) UI: Failed reading I2C Angle![0m
+[0;32mI (5780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (5780) UI: Failed reading I2C Angle![0m
+[1;31mE (5880) UI: Failed reading I2C Angle![0m
+[0;32mI (5980) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (5980) UI: Failed reading I2C Angle![0m
+[1;31mE (6080) UI: Failed reading I2C Angle![0m
+[0;32mI (6180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (6180) UI: Failed reading I2C Angle![0m
+[1;31mE (6280) UI: Failed reading I2C Angle![0m
+[0;32mI (6380) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (6380) UI: Failed reading I2C Angle![0m
+[1;31mE (6480) UI: Failed reading I2C Angle![0m
+[0;32mI (6580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (6580) UI: Failed reading I2C Angle![0m
+[1;31mE (6680) UI: Failed reading I2C Angle![0m
+[0;32mI (6780) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (6780) UI: Failed reading I2C Angle![0m
+[1;31mE (6880) UI: Failed reading I2C Angle![0m
+[0;32mI (6980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (6980) UI: Failed reading I2C Angle![0m
+[1;31mE (7080) UI: Failed reading I2C Angle![0m
+[0;32mI (7180) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (7180) UI: Failed reading I2C Angle![0m
+[1;31mE (7280) UI: Failed reading I2C Angle![0m
+[0;32mI (7380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (7380) UI: Failed reading I2C Angle![0m
+[1;31mE (7480) UI: Failed reading I2C Angle![0m
+[0;32mI (7580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (7580) UI: Failed reading I2C Angle![0m
+[1;31mE (7680) UI: Failed reading I2C Angle![0m
+[0;32mI (7780) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (7780) UI: Failed reading I2C Angle![0m
+[1;31mE (7880) UI: Failed reading I2C Angle![0m
+[0;32mI (7980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (7980) UI: Failed reading I2C Angle![0m
+[1;31mE (8080) UI: Failed reading I2C Angle![0m
+[0;32mI (8180) ENC_MUX: ENC0(ch0): 340.6° (3875)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (8180) UI: Failed reading I2C Angle![0m
+[1;31mE (8280) UI: Failed reading I2C Angle![0m
+[0;32mI (8380) ENC_MUX: ENC0(ch0): 329.7° (3751)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (8380) UI: Failed reading I2C Angle![0m
+[1;31mE (8480) UI: Failed reading I2C Angle![0m
+[0;32mI (8580) ENC_MUX: ENC0(ch0): 339.3° (3861)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (8580) UI: Failed reading I2C Angle![0m
+[1;31mE (8680) UI: Failed reading I2C Angle![0m
+[0;32mI (8780) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (8780) UI: Failed reading I2C Angle![0m
+[1;31mE (8880) UI: Failed reading I2C Angle![0m
+[0;32mI (8980) ENC_MUX: ENC0(ch0): 341.1° (3881)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.1° (217)[0m
+[1;31mE (8980) UI: Failed reading I2C Angle![0m
+[1;31mE (9080) UI: Failed reading I2C Angle![0m
+[0;32mI (9180) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (9180) UI: Failed reading I2C Angle![0m
+[1;31mE (9280) UI: Failed reading I2C Angle![0m
+[0;32mI (9380) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (9380) UI: Failed reading I2C Angle![0m
+[1;31mE (9480) UI: Failed reading I2C Angle![0m
+[0;32mI (9580) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (9580) UI: Failed reading I2C Angle![0m
+[1;31mE (9680) UI: Failed reading I2C Angle![0m
+[0;32mI (9780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (9780) UI: Failed reading I2C Angle![0m
+[1;31mE (9880) UI: Failed reading I2C Angle![0m
+[0;32mI (9980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (9980) UI: Failed reading I2C Angle![0m
+[1;31mE (10080) UI: Failed reading I2C Angle![0m
+[0;32mI (10180) ENC_MUX: ENC0(ch0): 339.3° (3861)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (10180) UI: Failed reading I2C Angle![0m
+[1;31mE (10280) UI: Failed reading I2C Angle![0m
+[0;32mI (10380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (10380) UI: Failed reading I2C Angle![0m
+[1;31mE (10480) UI: Failed reading I2C Angle![0m
+[0;32mI (10580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (10580) UI: Failed reading I2C Angle![0m
+[1;31mE (10680) UI: Failed reading I2C Angle![0m
+[0;32mI (10780) ENC_MUX: ENC0(ch0): 333.0° (3789)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (10780) UI: Failed reading I2C Angle![0m
+[1;31mE (10880) UI: Failed reading I2C Angle![0m
+[0;32mI (10980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (10980) UI: Failed reading I2C Angle![0m
+[1;31mE (11090) UI: Failed reading I2C Angle![0m
+[0;32mI (11180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.9° (124)[0m
+[1;31mE (11190) UI: Failed reading I2C Angle![0m
+[1;31mE (11290) UI: Failed reading I2C Angle![0m
+[0;32mI (11380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (11390) UI: Failed reading I2C Angle![0m
+[1;31mE (11490) UI: Failed reading I2C Angle![0m
+[0;32mI (11580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (11590) UI: Failed reading I2C Angle![0m
+[1;31mE (11690) UI: Failed reading I2C Angle![0m
+[0;32mI (11780) ENC_MUX: ENC0(ch0): 333.7° (3797)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (11790) UI: Failed reading I2C Angle![0m
+[1;31mE (11890) UI: Failed reading I2C Angle![0m
+[0;32mI (11980) ENC_MUX: ENC0(ch0): 332.7° (3785)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (11990) UI: Failed reading I2C Angle![0m
+[1;31mE (12090) UI: Failed reading I2C Angle![0m
+[0;32mI (12180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (12190) UI: Failed reading I2C Angle![0m
+[1;31mE (12290) UI: Failed reading I2C Angle![0m
+[0;32mI (12380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (12390) UI: Failed reading I2C Angle![0m
+[1;31mE (12490) UI: Failed reading I2C Angle![0m
+[0;32mI (12580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (12590) UI: Failed reading I2C Angle![0m
+[1;31mE (12690) UI: Failed reading I2C Angle![0m
+[0;32mI (12780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (12790) UI: Failed reading I2C Angle![0m
+[1;31mE (12890) UI: Failed reading I2C Angle![0m
+[0;32mI (12980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (12990) UI: Failed reading I2C Angle![0m
+[1;31mE (13090) UI: Failed reading I2C Angle![0m
+[0;32mI (13180) ENC_MUX: ENC0(ch0): 342.7° (3899)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (13190) UI: Failed reading I2C Angle![0m
+[1;31mE (13290) UI: Failed reading I2C Angle![0m
+[0;32mI (13380) ENC_MUX: ENC0(ch0): 332.7° (3785)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (13390) UI: Failed reading I2C Angle![0m
+[1;31mE (13490) UI: Failed reading I2C Angle![0m
+[0;32mI (13580) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (13590) UI: Failed reading I2C Angle![0m
+[1;31mE (13690) UI: Failed reading I2C Angle![0m
+[0;32mI (13780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (13790) UI: Failed reading I2C Angle![0m
+[1;31mE (13890) UI: Failed reading I2C Angle![0m
+[0;32mI (13980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.1° (217)[0m
+[1;31mE (13990) UI: Failed reading I2C Angle![0m
+[1;31mE (14090) UI: Failed reading I2C Angle![0m
+[0;32mI (14180) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (14190) UI: Failed reading I2C Angle![0m
+[1;31mE (14290) UI: Failed reading I2C Angle![0m
+[0;32mI (14380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (14390) UI: Failed reading I2C Angle![0m
+[1;31mE (14490) UI: Failed reading I2C Angle![0m
+[0;32mI (14580) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (14590) UI: Failed reading I2C Angle![0m
+[1;31mE (14690) UI: Failed reading I2C Angle![0m
+[0;32mI (14780) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (14790) UI: Failed reading I2C Angle![0m
+[1;31mE (14890) UI: Failed reading I2C Angle![0m
+[0;32mI (14980) ENC_MUX: ENC0(ch0): 323.8° (3684)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (14990) UI: Failed reading I2C Angle![0m
+[1;31mE (15090) UI: Failed reading I2C Angle![0m
+[0;32mI (15180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (15190) UI: Failed reading I2C Angle![0m
+[1;31mE (15290) UI: Failed reading I2C Angle![0m
+[0;32mI (15380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (15390) UI: Failed reading I2C Angle![0m
+[1;31mE (15490) UI: Failed reading I2C Angle![0m
+[0;32mI (15580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (15590) UI: Failed reading I2C Angle![0m
+[1;31mE (15690) UI: Failed reading I2C Angle![0m
+[0;32mI (15780) ENC_MUX: ENC0(ch0): 352.0° (4005)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (15790) UI: Failed reading I2C Angle![0m
+[1;31mE (15890) UI: Failed reading I2C Angle![0m
+[0;32mI (15980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (15990) UI: Failed reading I2C Angle![0m
+[1;31mE (16090) UI: Failed reading I2C Angle![0m
+[0;32mI (16180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (16190) UI: Failed reading I2C Angle![0m
+[1;31mE (16290) UI: Failed reading I2C Angle![0m
+[0;32mI (16380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (16390) UI: Failed reading I2C Angle![0m
+[1;31mE (16490) UI: Failed reading I2C Angle![0m
+[0;32mI (16580) ENC_MUX: ENC0(ch0): 339.3° (3861)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (16590) UI: Failed reading I2C Angle![0m
+[1;31mE (16690) UI: Failed reading I2C Angle![0m
+[0;32mI (16780) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (16790) UI: Failed reading I2C Angle![0m
+[1;31mE (16890) UI: Failed reading I2C Angle![0m
+[0;32mI (16980) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (16990) UI: Failed reading I2C Angle![0m
+[1;31mE (17090) UI: Failed reading I2C Angle![0m
+[0;32mI (17180) ENC_MUX: ENC0(ch0): 323.4° (3680)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (17190) UI: Failed reading I2C Angle![0m
+[1;31mE (17290) UI: Failed reading I2C Angle![0m
+[0;32mI (17380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (17390) UI: Failed reading I2C Angle![0m
+[1;31mE (17490) UI: Failed reading I2C Angle![0m
+[0;32mI (17580) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (17590) UI: Failed reading I2C Angle![0m
+[1;31mE (17690) UI: Failed reading I2C Angle![0m
+[0;32mI (17780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (17790) UI: Failed reading I2C Angle![0m
+[1;31mE (17890) UI: Failed reading I2C Angle![0m
+[0;32mI (17980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (17990) UI: Failed reading I2C Angle![0m
+[1;31mE (18090) UI: Failed reading I2C Angle![0m
+[0;32mI (18180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (18190) UI: Failed reading I2C Angle![0m
+[1;31mE (18290) UI: Failed reading I2C Angle![0m
+[0;32mI (18380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (18390) UI: Failed reading I2C Angle![0m
+[1;31mE (18490) UI: Failed reading I2C Angle![0m
+[0;32mI (18580) ENC_MUX: ENC0(ch0): 341.4° (3884)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (18590) UI: Failed reading I2C Angle![0m
+[1;31mE (18690) UI: Failed reading I2C Angle![0m
+[0;32mI (18780) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (18790) UI: Failed reading I2C Angle![0m
+[1;31mE (18890) UI: Failed reading I2C Angle![0m
+[0;32mI (18980) ENC_MUX: ENC0(ch0): 343.2° (3905)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 349.5° (3976)[0m
+[1;31mE (18990) UI: Failed reading I2C Angle![0m
+[1;31mE (19090) UI: Failed reading I2C Angle![0m
+[0;32mI (19180) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (19190) UI: Failed reading I2C Angle![0m
+[1;31mE (19290) UI: Failed reading I2C Angle![0m
+[0;32mI (19380) ENC_MUX: ENC0(ch0): 333.7° (3797)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (19390) UI: Failed reading I2C Angle![0m
+[1;31mE (19490) UI: Failed reading I2C Angle![0m
+[0;32mI (19580) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (19590) UI: Failed reading I2C Angle![0m
+[1;31mE (19690) UI: Failed reading I2C Angle![0m
+[0;32mI (19780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (19790) UI: Failed reading I2C Angle![0m
+[1;31mE (19890) UI: Failed reading I2C Angle![0m
+[0;32mI (19980) ENC_MUX: ENC0(ch0): 332.7° (3785)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (19990) UI: Failed reading I2C Angle![0m
+[1;31mE (20090) UI: Failed reading I2C Angle![0m
+[0;32mI (20180) ENC_MUX: ENC0(ch0): 335.2° (3814)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (20190) UI: Failed reading I2C Angle![0m
+[1;31mE (20290) UI: Failed reading I2C Angle![0m
+[0;32mI (20380) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (20390) UI: Failed reading I2C Angle![0m
+[1;31mE (20490) UI: Failed reading I2C Angle![0m
+[0;32mI (20580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (20590) UI: Failed reading I2C Angle![0m
+[1;31mE (20690) UI: Failed reading I2C Angle![0m
+[0;32mI (20780) ENC_MUX: ENC0(ch0): 332.1° (3778)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (20790) UI: Failed reading I2C Angle![0m
+[1;31mE (20890) UI: Failed reading I2C Angle![0m
+[0;32mI (20980) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (20990) UI: Failed reading I2C Angle![0m
+[1;31mE (21090) UI: Failed reading I2C Angle![0m
+[0;32mI (21180) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (21190) UI: Failed reading I2C Angle![0m
+[1;31mE (21290) UI: Failed reading I2C Angle![0m
+[0;32mI (21380) ENC_MUX: ENC0(ch0): 332.6° (3784)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (21390) UI: Failed reading I2C Angle![0m
+[1;31mE (21490) UI: Failed reading I2C Angle![0m
+[0;32mI (21580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (21590) UI: Failed reading I2C Angle![0m
+[1;31mE (21690) UI: Failed reading I2C Angle![0m
+[0;32mI (21780) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (21790) UI: Failed reading I2C Angle![0m
+[1;31mE (21890) UI: Failed reading I2C Angle![0m
+[0;32mI (21980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (21990) UI: Failed reading I2C Angle![0m
+[1;31mE (22090) UI: Failed reading I2C Angle![0m
+[0;32mI (22180) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (22190) UI: Failed reading I2C Angle![0m
+[1;31mE (22290) UI: Failed reading I2C Angle![0m
+[0;32mI (22380) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (22390) UI: Failed reading I2C Angle![0m
+[1;31mE (22490) UI: Failed reading I2C Angle![0m
+[0;32mI (22580) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (22590) UI: Failed reading I2C Angle![0m
+[1;31mE (22690) UI: Failed reading I2C Angle![0m
+[0;32mI (22780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (22790) UI: Failed reading I2C Angle![0m
+[1;31mE (22890) UI: Failed reading I2C Angle![0m
+[0;32mI (22980) ENC_MUX: ENC0(ch0): 340.0° (3868)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (22990) UI: Failed reading I2C Angle![0m
+[1;31mE (23090) UI: Failed reading I2C Angle![0m
+[0;32mI (23180) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (23190) UI: Failed reading I2C Angle![0m
+[1;31mE (23290) UI: Failed reading I2C Angle![0m
+[0;32mI (23380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (23390) UI: Failed reading I2C Angle![0m
+[1;31mE (23490) UI: Failed reading I2C Angle![0m
+[0;32mI (23580) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (23590) UI: Failed reading I2C Angle![0m
+[1;31mE (23690) UI: Failed reading I2C Angle![0m
+[0;32mI (23780) ENC_MUX: ENC0(ch0): 333.6° (3796)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (23790) UI: Failed reading I2C Angle![0m
+[1;31mE (23890) UI: Failed reading I2C Angle![0m
+[0;32mI (23980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (23990) UI: Failed reading I2C Angle![0m
+[1;31mE (24090) UI: Failed reading I2C Angle![0m
+[0;32mI (24180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (24190) UI: Failed reading I2C Angle![0m
+[1;31mE (24290) UI: Failed reading I2C Angle![0m
+[0;32mI (24380) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (24390) UI: Failed reading I2C Angle![0m
+[1;31mE (24490) UI: Failed reading I2C Angle![0m
+[0;32mI (24580) ENC_MUX: ENC0(ch0): 333.2° (3791)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (24590) UI: Failed reading I2C Angle![0m
+[1;31mE (24690) UI: Failed reading I2C Angle![0m
+[0;32mI (24780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (24790) UI: Failed reading I2C Angle![0m
+[1;31mE (24890) UI: Failed reading I2C Angle![0m
+[0;32mI (24980) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (24990) UI: Failed reading I2C Angle![0m
+[1;31mE (25090) UI: Failed reading I2C Angle![0m
+[0;32mI (25180) ENC_MUX: ENC0(ch0): 352.5° (4011)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (25190) UI: Failed reading I2C Angle![0m
+[1;31mE (25290) UI: Failed reading I2C Angle![0m
+[0;32mI (25380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (25390) UI: Failed reading I2C Angle![0m
+[1;31mE (25490) UI: Failed reading I2C Angle![0m
+[0;32mI (25580) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (25590) UI: Failed reading I2C Angle![0m
+[1;31mE (25690) UI: Failed reading I2C Angle![0m
+[0;32mI (25780) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (25790) UI: Failed reading I2C Angle![0m
+[1;31mE (25890) UI: Failed reading I2C Angle![0m
+[0;32mI (25980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (25990) UI: Failed reading I2C Angle![0m
+[1;31mE (26090) UI: Failed reading I2C Angle![0m
+[0;32mI (26180) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (26190) UI: Failed reading I2C Angle![0m
+[1;31mE (26290) UI: Failed reading I2C Angle![0m
+[0;32mI (26380) ENC_MUX: ENC0(ch0): 331.3° (3770)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (26390) UI: Failed reading I2C Angle![0m
+[1;31mE (26490) UI: Failed reading I2C Angle![0m
+[0;32mI (26580) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.0° (228)[0m
+[1;31mE (26590) UI: Failed reading I2C Angle![0m
+[1;31mE (26690) UI: Failed reading I2C Angle![0m
+[0;32mI (26780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (26790) UI: Failed reading I2C Angle![0m
+[1;31mE (26890) UI: Failed reading I2C Angle![0m
+[0;32mI (26980) ENC_MUX: ENC0(ch0): 332.1° (3778)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (26990) UI: Failed reading I2C Angle![0m
+[1;31mE (27090) UI: Failed reading I2C Angle![0m
+[0;32mI (27180) ENC_MUX: ENC0(ch0): 343.7° (3910)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (27190) UI: Failed reading I2C Angle![0m
+[1;31mE (27290) UI: Failed reading I2C Angle![0m
+[0;32mI (27380) ENC_MUX: ENC0(ch0): 321.7° (3660)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (27390) UI: Failed reading I2C Angle![0m
+[1;31mE (27490) UI: Failed reading I2C Angle![0m
+[0;32mI (27580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (27590) UI: Failed reading I2C Angle![0m
+[1;31mE (27690) UI: Failed reading I2C Angle![0m
+[0;32mI (27780) ENC_MUX: ENC0(ch0): 341.1° (3881)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (27790) UI: Failed reading I2C Angle![0m
+[1;31mE (27890) UI: Failed reading I2C Angle![0m
+[0;32mI (27980) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (27990) UI: Failed reading I2C Angle![0m
+[1;31mE (28090) UI: Failed reading I2C Angle![0m
+[0;32mI (28180) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (28190) UI: Failed reading I2C Angle![0m
+[1;31mE (28290) UI: Failed reading I2C Angle![0m
+[0;32mI (28380) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (28390) UI: Failed reading I2C Angle![0m
+[1;31mE (28490) UI: Failed reading I2C Angle![0m
+[0;32mI (28580) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (28590) UI: Failed reading I2C Angle![0m
+[1;31mE (28690) UI: Failed reading I2C Angle![0m
+[0;32mI (28780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (28790) UI: Failed reading I2C Angle![0m
+[1;31mE (28890) UI: Failed reading I2C Angle![0m
+[0;32mI (28980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 17.6° (200)[0m
+[1;31mE (28990) UI: Failed reading I2C Angle![0m
+[1;31mE (29090) UI: Failed reading I2C Angle![0m
+[0;32mI (29180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (29190) UI: Failed reading I2C Angle![0m
+[1;31mE (29290) UI: Failed reading I2C Angle![0m
+[0;32mI (29380) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (29390) UI: Failed reading I2C Angle![0m
+[1;31mE (29490) UI: Failed reading I2C Angle![0m
+[0;32mI (29580) ENC_MUX: ENC0(ch0): 340.0° (3868)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (29590) UI: Failed reading I2C Angle![0m
+[1;31mE (29690) UI: Failed reading I2C Angle![0m
+[0;32mI (29780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 349.0° (3971)[0m
+[1;31mE (29790) UI: Failed reading I2C Angle![0m
+[1;31mE (29890) UI: Failed reading I2C Angle![0m
+[0;32mI (29980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (29990) UI: Failed reading I2C Angle![0m
+[1;31mE (30090) UI: Failed reading I2C Angle![0m
+[0;32mI (30180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (30190) UI: Failed reading I2C Angle![0m
+[1;31mE (30290) UI: Failed reading I2C Angle![0m
+[0;32mI (30380) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (30390) UI: Failed reading I2C Angle![0m
+[1;31mE (30490) UI: Failed reading I2C Angle![0m
+[0;32mI (30580) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (30590) UI: Failed reading I2C Angle![0m
+[1;31mE (30690) UI: Failed reading I2C Angle![0m
+[0;32mI (30780) ENC_MUX: ENC0(ch0): 339.9° (3867)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (30790) UI: Failed reading I2C Angle![0m
+[1;31mE (30890) UI: Failed reading I2C Angle![0m
+[0;32mI (30980) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (30990) UI: Failed reading I2C Angle![0m
+[1;31mE (31090) UI: Failed reading I2C Angle![0m
+[0;32mI (31180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (31190) UI: Failed reading I2C Angle![0m
+[1;31mE (31290) UI: Failed reading I2C Angle![0m
+[0;32mI (31380) ENC_MUX: ENC0(ch0): 340.7° (3876)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (31390) UI: Failed reading I2C Angle![0m
+[1;31mE (31490) UI: Failed reading I2C Angle![0m
+[0;32mI (31580) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (31590) UI: Failed reading I2C Angle![0m
+[1;31mE (31690) UI: Failed reading I2C Angle![0m
+[0;32mI (31780) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (31790) UI: Failed reading I2C Angle![0m
+[1;31mE (31890) UI: Failed reading I2C Angle![0m
+[0;32mI (31980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (31990) UI: Failed reading I2C Angle![0m
+[1;31mE (32090) UI: Failed reading I2C Angle![0m
+[0;32mI (32180) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (32190) UI: Failed reading I2C Angle![0m
+[1;31mE (32290) UI: Failed reading I2C Angle![0m
+[0;32mI (32380) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (32390) UI: Failed reading I2C Angle![0m
+[1;31mE (32490) UI: Failed reading I2C Angle![0m
+[0;32mI (32580) ENC_MUX: ENC0(ch0): 341.8° (3889)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (32590) UI: Failed reading I2C Angle![0m
+[1;31mE (32690) UI: Failed reading I2C Angle![0m
+[0;32mI (32780) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (32790) UI: Failed reading I2C Angle![0m
+[1;31mE (32890) UI: Failed reading I2C Angle![0m
+[0;32mI (32980) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (32990) UI: Failed reading I2C Angle![0m
+[1;31mE (33090) UI: Failed reading I2C Angle![0m
+[0;32mI (33180) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (33190) UI: Failed reading I2C Angle![0m
+[1;31mE (33290) UI: Failed reading I2C Angle![0m
+[0;32mI (33380) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (33390) UI: Failed reading I2C Angle![0m
+[1;31mE (33490) UI: Failed reading I2C Angle![0m
+[0;32mI (33580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (33590) UI: Failed reading I2C Angle![0m
+[1;31mE (33690) UI: Failed reading I2C Angle![0m
+[0;32mI (33780) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (33790) UI: Failed reading I2C Angle![0m
+[1;31mE (33890) UI: Failed reading I2C Angle![0m
+[0;32mI (33980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.2° (230)[0m
+[1;31mE (33990) UI: Failed reading I2C Angle![0m
+[1;31mE (34090) UI: Failed reading I2C Angle![0m
+[0;32mI (34180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (34190) UI: Failed reading I2C Angle![0m
+[1;31mE (34290) UI: Failed reading I2C Angle![0m
+[0;32mI (34380) ENC_MUX: ENC0(ch0): 324.8° (3695)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (34390) UI: Failed reading I2C Angle![0m
+E (34490) UI: Failed reading I2C Angle!
+[0;32mI (34580) ENC_MUX: ENC0(ch0): 331.5° (3772)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (34590) UI: Failed reading I2C Angle![0m
+[1;31mE (34690) UI: Failed reading I2C Angle![0m
+[0;32mI (34780) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (34790) UI: Failed reading I2C Angle![0m
+[1;31mE (34890) UI: Failed reading I2C Angle![0m
+[0;32mI (34980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 357.7° (4070)[0m
+[1;31mE (34990) UI: Failed reading I2C Angle![0m
+[1;31mE (35090) UI: Failed reading I2C Angle![0m
+[0;32mI (35180) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (35190) UI: Failed reading I2C Angle![0m
+[1;31mE (35290) UI: Failed reading I2C Angle![0m
+[0;32mI (35380) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (35390) UI: Failed reading I2C Angle![0m
+[1;31mE (35490) UI: Failed reading I2C Angle![0m
+[0;32mI (35580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (35590) UI: Failed reading I2C Angle![0m
+[1;31mE (35690) UI: Failed reading I2C Angle![0m
+[0;32mI (35780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (35790) UI: Failed reading I2C Angle![0m
+[1;31mE (35890) UI: Failed reading I2C Angle![0m
+[0;32mI (35980) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (35990) UI: Failed reading I2C Angle![0m
+[1;31mE (36090) UI: Failed reading I2C Angle![0m
+[0;32mI (36180) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (36190) UI: Failed reading I2C Angle![0m
+[1;31mE (36290) UI: Failed reading I2C Angle![0m
+[0;32mI (36380) ENC_MUX: ENC0(ch0): 335.2° (3814)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (36390) UI: Failed reading I2C Angle![0m
+[1;31mE (36490) UI: Failed reading I2C Angle![0m
+[0;32mI (36580) ENC_MUX: ENC0(ch0): 349.0° (3971)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 350.9° (3992)[0m
+[1;31mE (36590) UI: Failed reading I2C Angle![0m
+[1;31mE (36690) UI: Failed reading I2C Angle![0m
+[0;32mI (36780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.2° (230)[0m
+[1;31mE (36790) UI: Failed reading I2C Angle![0m
+[1;31mE (36890) UI: Failed reading I2C Angle![0m
+[0;32mI (36980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (36990) UI: Failed reading I2C Angle![0m
+[1;31mE (37090) UI: Failed reading I2C Angle![0m
+[0;32mI (37180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (37190) UI: Failed reading I2C Angle![0m
+[1;31mE (37290) UI: Failed reading I2C Angle![0m
+[0;32mI (37380) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (37390) UI: Failed reading I2C Angle![0m
+[1;31mE (37490) UI: Failed reading I2C Angle![0m
+[0;32mI (37580) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (37590) UI: Failed reading I2C Angle![0m
+[1;31mE (37690) UI: Failed reading I2C Angle![0m
+[0;32mI (37780) ENC_MUX: ENC0(ch0): 332.1° (3778)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (37790) UI: Failed reading I2C Angle![0m
+[1;31mE (37890) UI: Failed reading I2C Angle![0m
+[0;32mI (37980) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (37990) UI: Failed reading I2C Angle![0m
+[1;31mE (38090) UI: Failed reading I2C Angle![0m
+[0;32mI (38180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (38190) UI: Failed reading I2C Angle![0m
+[1;31mE (38290) UI: Failed reading I2C Angle![0m
+[0;32mI (38380) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (38390) UI: Failed reading I2C Angle![0m
+[1;31mE (38490) UI: Failed reading I2C Angle![0m
+[0;32mI (38580) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (38590) UI: Failed reading I2C Angle![0m
+[1;31mE (38690) UI: Failed reading I2C Angle![0m
+[0;32mI (38780) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (38790) UI: Failed reading I2C Angle![0m
+[1;31mE (38890) UI: Failed reading I2C Angle![0m
+[0;32mI (38980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (38990) UI: Failed reading I2C Angle![0m
+[1;31mE (39090) UI: Failed reading I2C Angle![0m
+[0;32mI (39180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (39190) UI: Failed reading I2C Angle![0m
+[1;31mE (39290) UI: Failed reading I2C Angle![0m
+[0;32mI (39380) ENC_MUX: ENC0(ch0): 327.4° (3725)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (39390) UI: Failed reading I2C Angle![0m
+[1;31mE (39490) UI: Failed reading I2C Angle![0m
+[0;32mI (39580) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (39590) UI: Failed reading I2C Angle![0m
+[1;31mE (39690) UI: Failed reading I2C Angle![0m
+[0;32mI (39780) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (39790) UI: Failed reading I2C Angle![0m
+[1;31mE (39890) UI: Failed reading I2C Angle![0m
+[0;32mI (39980) ENC_MUX: ENC0(ch0): 320.5° (3647)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (39990) UI: Failed reading I2C Angle![0m
+[1;31mE (40090) UI: Failed reading I2C Angle![0m
+[0;32mI (40180) ENC_MUX: ENC0(ch0): 330.9° (3765)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (40190) UI: Failed reading I2C Angle![0m
+[1;31mE (40290) UI: Failed reading I2C Angle![0m
+[0;32mI (40380) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (40390) UI: Failed reading I2C Angle![0m
+[1;31mE (40490) UI: Failed reading I2C Angle![0m
+[0;32mI (40580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (40590) UI: Failed reading I2C Angle![0m
+[1;31mE (40690) UI: Failed reading I2C Angle![0m
+[0;32mI (40780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (40790) UI: Failed reading I2C Angle![0m
+[1;31mE (40890) UI: Failed reading I2C Angle![0m
+[0;32mI (40980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (40990) UI: Failed reading I2C Angle![0m
+[1;31mE (41090) UI: Failed reading I2C Angle![0m
+[0;32mI (41180) ENC_MUX: ENC0(ch0): 349.5° (3976)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (41190) UI: Failed reading I2C Angle![0m
+[1;31mE (41290) UI: Failed reading I2C Angle![0m
+[0;32mI (41380) ENC_MUX: ENC0(ch0): 341.7° (3888)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (41390) UI: Failed reading I2C Angle![0m
+[1;31mE (41490) UI: Failed reading I2C Angle![0m
+[0;32mI (41580) ENC_MUX: ENC0(ch0): 349.5° (3976)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (41590) UI: Failed reading I2C Angle![0m
+[1;31mE (41690) UI: Failed reading I2C Angle![0m
+[0;32mI (41780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (41790) UI: Failed reading I2C Angle![0m
+[1;31mE (41890) UI: Failed reading I2C Angle![0m
+[0;32mI (41980) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (41990) UI: Failed reading I2C Angle![0m
+[1;31mE (42090) UI: Failed reading I2C Angle![0m
+[0;32mI (42180) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (42190) UI: Failed reading I2C Angle![0m
+[1;31mE (42290) UI: Failed reading I2C Angle![0m
+[0;32mI (42380) ENC_MUX: ENC0(ch0): 343.2° (3905)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (42390) UI: Failed reading I2C Angle![0m
+[1;31mE (42490) UI: Failed reading I2C Angle![0m
+[0;32mI (42580) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (42590) UI: Failed reading I2C Angle![0m
+[1;31mE (42690) UI: Failed reading I2C Angle![0m
+[0;32mI (42780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (42790) UI: Failed reading I2C Angle![0m
+[1;31mE (42890) UI: Failed reading I2C Angle![0m
+[0;32mI (42980) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (42990) UI: Failed reading I2C Angle![0m
+[1;31mE (43090) UI: Failed reading I2C Angle![0m
+[0;32mI (43180) ENC_MUX: ENC0(ch0): 333.7° (3797)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (43190) UI: Failed reading I2C Angle![0m
+[1;31mE (43290) UI: Failed reading I2C Angle![0m
+[0;32mI (43380) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (43390) UI: Failed reading I2C Angle![0m
+[1;31mE (43490) UI: Failed reading I2C Angle![0m
+[0;32mI (43580) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (43590) UI: Failed reading I2C Angle![0m
+[1;31mE (43690) UI: Failed reading I2C Angle![0m
+[0;32mI (43780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (43790) UI: Failed reading I2C Angle![0m
+[1;31mE (43890) UI: Failed reading I2C Angle![0m
+[0;32mI (43980) ENC_MUX: ENC0(ch0): 334.2° (3803)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (43990) UI: Failed reading I2C Angle![0m
+[1;31mE (44090) UI: Failed reading I2C Angle![0m
+[0;32mI (44180) ENC_MUX: ENC0(ch0): 325.3° (3701)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (44190) UI: Failed reading I2C Angle![0m
+[1;31mE (44290) UI: Failed reading I2C Angle![0m
+[0;32mI (44380) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (44390) UI: Failed reading I2C Angle![0m
+[1;31mE (44490) UI: Failed reading I2C Angle![0m
+[0;32mI (44580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (44590) UI: Failed reading I2C Angle![0m
+[1;31mE (44690) UI: Failed reading I2C Angle![0m
+[0;32mI (44780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (44790) UI: Failed reading I2C Angle![0m
+[1;31mE (44890) UI: Failed reading I2C Angle![0m
+[0;32mI (44980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.5° (222)[0m
+[1;31mE (44990) UI: Failed reading I2C Angle![0m
+[1;31mE (45090) UI: Failed reading I2C Angle![0m
+[0;32mI (45180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (45190) UI: Failed reading I2C Angle![0m
+[1;31mE (45290) UI: Failed reading I2C Angle![0m
+[0;32mI (45380) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (45390) UI: Failed reading I2C Angle![0m
+[1;31mE (45490) UI: Failed reading I2C Angle![0m
+[0;32mI (45580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (45590) UI: Failed reading I2C Angle![0m
+[1;31mE (45690) UI: Failed reading I2C Angle![0m
+[0;32mI (45780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 358.9° (4083)[0m
+[1;31mE (45790) UI: Failed reading I2C Angle![0m
+[1;31mE (45890) UI: Failed reading I2C Angle![0m
+[0;32mI (45980) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (45990) UI: Failed reading I2C Angle![0m
+[1;31mE (46090) UI: Failed reading I2C Angle![0m
+[0;32mI (46180) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (46190) UI: Failed reading I2C Angle![0m
+[1;31mE (46290) UI: Failed reading I2C Angle![0m
+[0;32mI (46380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (46390) UI: Failed reading I2C Angle![0m
+[1;31mE (46490) UI: Failed reading I2C Angle![0m
+[0;32mI (46580) ENC_MUX: ENC0(ch0): 323.2° (3677)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (46590) UI: Failed reading I2C Angle![0m
+[1;31mE (46690) UI: Failed reading I2C Angle![0m
+[0;32mI (46780) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (46790) UI: Failed reading I2C Angle![0m
+[1;31mE (46890) UI: Failed reading I2C Angle![0m
+[0;32mI (46980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (46990) UI: Failed reading I2C Angle![0m
+[1;31mE (47090) UI: Failed reading I2C Angle![0m
+[0;32mI (47180) ENC_MUX: ENC0(ch0): 340.6° (3875)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (47190) UI: Failed reading I2C Angle![0m
+[1;31mE (47290) UI: Failed reading I2C Angle![0m
+[0;32mI (47380) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (47390) UI: Failed reading I2C Angle![0m
+[1;31mE (47490) UI: Failed reading I2C Angle![0m
+[0;32mI (47580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (47590) UI: Failed reading I2C Angle![0m
+[1;31mE (47690) UI: Failed reading I2C Angle![0m
+[0;32mI (47780) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (47790) UI: Failed reading I2C Angle![0m
+[1;31mE (47890) UI: Failed reading I2C Angle![0m
+[0;32mI (47980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 7.9° (90)[0m
+[1;31mE (47990) UI: Failed reading I2C Angle![0m
+[1;31mE (48090) UI: Failed reading I2C Angle![0m
+[0;32mI (48180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (48190) UI: Failed reading I2C Angle![0m
+[1;31mE (48290) UI: Failed reading I2C Angle![0m
+[0;32mI (48380) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (48390) UI: Failed reading I2C Angle![0m
+[1;31mE (48490) UI: Failed reading I2C Angle![0m
+[0;32mI (48580) ENC_MUX: ENC0(ch0): 349.5° (3976)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (48590) UI: Failed reading I2C Angle![0m
+[1;31mE (48690) UI: Failed reading I2C Angle![0m
+[0;32mI (48780) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (48790) UI: Failed reading I2C Angle![0m
+[1;31mE (48890) UI: Failed reading I2C Angle![0m
+[0;32mI (48980) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (48990) UI: Failed reading I2C Angle![0m
+[1;31mE (49090) UI: Failed reading I2C Angle![0m
+[0;32mI (49180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (49190) UI: Failed reading I2C Angle![0m
+[1;31mE (49290) UI: Failed reading I2C Angle![0m
+[0;32mI (49380) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (49390) UI: Failed reading I2C Angle![0m
+[1;31mE (49490) UI: Failed reading I2C Angle![0m
+[0;32mI (49580) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (49590) UI: Failed reading I2C Angle![0m
+[1;31mE (49690) UI: Failed reading I2C Angle![0m
+[0;32mI (49780) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (49790) UI: Failed reading I2C Angle![0m
+[1;31mE (49890) UI: Failed reading I2C Angle![0m
+[0;32mI (49980) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (49990) UI: Failed reading I2C Angle![0m
+[1;31mE (50090) UI: Failed reading I2C Angle![0m
+[0;32mI (50180) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (50190) UI: Failed reading I2C Angle![0m
+[1;31mE (50290) UI: Failed reading I2C Angle![0m
+[0;32mI (50380) ENC_MUX: ENC0(ch0): 331.5° (3772)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (50390) UI: Failed reading I2C Angle![0m
+[1;31mE (50490) UI: Failed reading I2C Angle![0m
+[0;32mI (50580) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (50590) UI: Failed reading I2C Angle![0m
+[1;31mE (50690) UI: Failed reading I2C Angle![0m
+[0;32mI (50780) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (50790) UI: Failed reading I2C Angle![0m
+[1;31mE (50890) UI: Failed reading I2C Angle![0m
+[0;32mI (50980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (50990) UI: Failed reading I2C Angle![0m
+[1;31mE (51090) UI: Failed reading I2C Angle![0m
+[0;32mI (51180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 358.2° (4075)[0m
+[1;31mE (51190) UI: Failed reading I2C Angle![0m
+[1;31mE (51290) UI: Failed reading I2C Angle![0m
+[0;32mI (51380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (51390) UI: Failed reading I2C Angle![0m
+[1;31mE (51490) UI: Failed reading I2C Angle![0m
+[0;32mI (51580) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 2.3° (26)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (51590) UI: Failed reading I2C Angle![0m
+[1;31mE (51690) UI: Failed reading I2C Angle![0m
+[0;32mI (51780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (51790) UI: Failed reading I2C Angle![0m
+[1;31mE (51890) UI: Failed reading I2C Angle![0m
+[0;32mI (51980) ENC_MUX: ENC0(ch0): 329.9° (3754)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (51990) UI: Failed reading I2C Angle![0m
+[1;31mE (52090) UI: Failed reading I2C Angle![0m
+[0;32mI (52180) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (52190) UI: Failed reading I2C Angle![0m
+[1;31mE (52290) UI: Failed reading I2C Angle![0m
+[0;32mI (52380) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 105.4° (1199)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (52390) UI: Failed reading I2C Angle![0m
+[1;31mE (52490) UI: Failed reading I2C Angle![0m
+[0;32mI (52580) ENC_MUX: ENC0(ch0): 355.7° (4047)  |  ENC1(ch1): 110.4° (1256)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (52590) UI: Failed reading I2C Angle![0m
+[1;31mE (52690) UI: Failed reading I2C Angle![0m
+[0;32mI (52780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 101.8° (1158)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (52790) UI: Failed reading I2C Angle![0m
+[1;31mE (52890) UI: Failed reading I2C Angle![0m
+[0;32mI (52980) ENC_MUX: ENC0(ch0): 333.2° (3791)  |  ENC1(ch1): 299.7° (3410)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (52990) UI: Failed reading I2C Angle![0m
+[1;31mE (53090) UI: Failed reading I2C Angle![0m
+[0;32mI (53180) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 303.1° (3449)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.3° (117)[0m
+[1;31mE (53190) UI: Failed reading I2C Angle![0m
+[1;31mE (53290) UI: Failed reading I2C Angle![0m
+[0;32mI (53380) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 301.6° (3431)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (53390) UI: Failed reading I2C Angle![0m
+[1;31mE (53490) UI: Failed reading I2C Angle![0m
+[0;32mI (53580) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 292.2° (3325)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (53590) UI: Failed reading I2C Angle![0m
+[1;31mE (53690) UI: Failed reading I2C Angle![0m
+[0;32mI (53780) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 291.5° (3317)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (53790) UI: Failed reading I2C Angle![0m
+[1;31mE (53890) UI: Failed reading I2C Angle![0m
+[0;32mI (53980) ENC_MUX: ENC0(ch0): 343.7° (3910)  |  ENC1(ch1): 293.6° (3340)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (53990) UI: Failed reading I2C Angle![0m
+[1;31mE (54090) UI: Failed reading I2C Angle![0m
+[0;32mI (54180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 290.4° (3304)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (54190) UI: Failed reading I2C Angle![0m
+[1;31mE (54290) UI: Failed reading I2C Angle![0m
+[0;32mI (54380) ENC_MUX: ENC0(ch0): 350.2° (3985)  |  ENC1(ch1): 286.3° (3258)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (54390) UI: Failed reading I2C Angle![0m
+[1;31mE (54490) UI: Failed reading I2C Angle![0m
+[0;32mI (54580) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 269.3° (3064)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (54590) UI: Failed reading I2C Angle![0m
+[1;31mE (54690) UI: Failed reading I2C Angle![0m
+[0;32mI (54780) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 267.1° (3039)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (54790) UI: Failed reading I2C Angle![0m
+[1;31mE (54890) UI: Failed reading I2C Angle![0m
+[0;32mI (54980) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 267.5° (3044)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (54990) UI: Failed reading I2C Angle![0m
+[1;31mE (55090) UI: Failed reading I2C Angle![0m
+[0;32mI (55180) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 275.4° (3133)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (55190) UI: Failed reading I2C Angle![0m
+[1;31mE (55290) UI: Failed reading I2C Angle![0m
+[0;32mI (55380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 279.1° (3175)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (55390) UI: Failed reading I2C Angle![0m
+[1;31mE (55490) UI: Failed reading I2C Angle![0m
+[0;32mI (55580) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 283.3° (3223)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (55590) UI: Failed reading I2C Angle![0m
+[1;31mE (55690) UI: Failed reading I2C Angle![0m
+[0;32mI (55780) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 282.0° (3208)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (55790) UI: Failed reading I2C Angle![0m
+[1;31mE (55890) UI: Failed reading I2C Angle![0m
+[0;32mI (55980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 279.4° (3179)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (55990) UI: Failed reading I2C Angle![0m
+[1;31mE (56090) UI: Failed reading I2C Angle![0m
+[0;32mI (56180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 284.9° (3241)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (56190) UI: Failed reading I2C Angle![0m
+[1;31mE (56290) UI: Failed reading I2C Angle![0m
+[0;32mI (56380) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 299.7° (3410)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (56390) UI: Failed reading I2C Angle![0m
+[1;31mE (56490) UI: Failed reading I2C Angle![0m
+[0;32mI (56580) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 307.4° (3497)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.2° (230)[0m
+[1;31mE (56590) UI: Failed reading I2C Angle![0m
+[1;31mE (56690) UI: Failed reading I2C Angle![0m
+[0;32mI (56780) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 305.9° (3481)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (56790) UI: Failed reading I2C Angle![0m
+[1;31mE (56890) UI: Failed reading I2C Angle![0m
+[0;32mI (56980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 305.2° (3472)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (56990) UI: Failed reading I2C Angle![0m
+[1;31mE (57090) UI: Failed reading I2C Angle![0m
+[0;32mI (57180) ENC_MUX: ENC0(ch0): 330.9° (3765)  |  ENC1(ch1): 305.2° (3473)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (57190) UI: Failed reading I2C Angle![0m
+[1;31mE (57290) UI: Failed reading I2C Angle![0m
+[0;32mI (57380) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 304.1° (3460)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (57390) UI: Failed reading I2C Angle![0m
+[1;31mE (57490) UI: Failed reading I2C Angle![0m
+[0;32mI (57580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 330.3° (3758)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (57590) UI: Failed reading I2C Angle![0m
+[1;31mE (57690) UI: Failed reading I2C Angle![0m
+[0;32mI (57780) ENC_MUX: ENC0(ch0): 340.1° (3870)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (57790) UI: Failed reading I2C Angle![0m
+[1;31mE (57890) UI: Failed reading I2C Angle![0m
+[0;32mI (57980) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (57990) UI: Failed reading I2C Angle![0m
+[1;31mE (58090) UI: Failed reading I2C Angle![0m
+[0;32mI (58180) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (58190) UI: Failed reading I2C Angle![0m
+[1;31mE (58290) UI: Failed reading I2C Angle![0m
+[0;32mI (58380) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (58390) UI: Failed reading I2C Angle![0m
+[1;31mE (58490) UI: Failed reading I2C Angle![0m
+[0;32mI (58580) ENC_MUX: ENC0(ch0): 332.8° (3786)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (58590) UI: Failed reading I2C Angle![0m
+[1;31mE (58690) UI: Failed reading I2C Angle![0m
+[0;32mI (58780) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (58790) UI: Failed reading I2C Angle![0m
+[1;31mE (58890) UI: Failed reading I2C Angle![0m
+[0;32mI (58980) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (58990) UI: Failed reading I2C Angle![0m
+[1;31mE (59090) UI: Failed reading I2C Angle![0m
+[0;32mI (59180) ENC_MUX: ENC0(ch0): 331.6° (3773)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (59190) UI: Failed reading I2C Angle![0m
+[1;31mE (59290) UI: Failed reading I2C Angle![0m
+[0;32mI (59380) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (59390) UI: Failed reading I2C Angle![0m
+[1;31mE (59490) UI: Failed reading I2C Angle![0m
+[0;32mI (59580) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (59590) UI: Failed reading I2C Angle![0m
+[1;31mE (59690) UI: Failed reading I2C Angle![0m
+[0;32mI (59780) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (59790) UI: Failed reading I2C Angle![0m
+[1;31mE (59890) UI: Failed reading I2C Angle![0m
+[0;32mI (59980) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (59990) UI: Failed reading I2C Angle![0m
+[1;31mE (60090) UI: Failed reading I2C Angle![0m
+[0;32mI (60180) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (60190) UI: Failed reading I2C Angle![0m
+[1;31mE (60290) UI: Failed reading I2C Angle![0m
+[0;32mI (60380) ENC_MUX: ENC0(ch0): 330.6° (3761)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (60390) UI: Failed reading I2C Angle![0m
+[1;31mE (60490) UI: Failed reading I2C Angle![0m
+[0;32mI (60580) ENC_MUX: ENC0(ch0): 332.5° (3783)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (60590) UI: Failed reading I2C Angle![0m
+[1;31mE (60690) UI: Failed reading I2C Angle![0m
+[1;31mE (60780) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (60780) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (60780) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (60780) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (60780) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (60800) UI: Failed reading I2C Angle![0m
+[1;31mE (60900) UI: Failed reading I2C Angle![0m
+[1;31mE (60990) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (60990) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (60990) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (60990) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (60990) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (61010) UI: Failed reading I2C Angle![0m
+[1;31mE (61110) UI: Failed reading I2C Angle![0m
+[1;31mE (61200) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (61200) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (61200) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (61200) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (61200) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (61220) UI: Failed reading I2C Angle![0m
+[1;31mE (61320) UI: Failed reading I2C Angle![0m
+[1;31mE (61410) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (61410) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (61410) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (61410) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (61410) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (61430) UI: Failed reading I2C Angle![0m
+[1;31mE (61530) UI: Failed reading I2C Angle![0m
+[1;31mE (61620) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (61620) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (61620) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (61620) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (61620) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (61640) UI: Failed reading I2C Angle![0m
+[1;31mE (61740) UI: Failed reading I2C Angle![0m
+[1;31mE (61830) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (61830) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (61830) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (61830) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (61830) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (61850) UI: Failed reading I2C Angle![0m
+[1;31mE (61950) UI: Failed reading I2C Angle![0m
+[1;31mE (62040) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (62040) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (62040) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (62040) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (62040) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (62060) UI: Failed reading I2C Angle![0m
+[1;31mE (62160) UI: Failed reading I2C Angle![0m
+[1;31mE (62250) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (62250) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (62250) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (62250) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (62250) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (62270) UI: Failed reading I2C Angle![0m
+[1;31mE (62370) UI: Failed reading I2C Angle![0m
+[1;31mE (62460) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (62460) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (62460) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (62460) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (62460) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (62480) UI: Failed reading I2C Angle![0m
+[1;31mE (62580) UI: Failed reading I2C Angle![0m
+[1;31mE (62670) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (62670) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (62670) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (62670) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (62670) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (62690) UI: Failed reading I2C Angle![0m
+[1;31mE (62790) UI: Failed reading I2C Angle![0m
+[1;31mE (62880) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (62880) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (62880) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (62880) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (62880) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (62900) UI: Failed reading I2C Angle![0m
+[1;31mE (63000) UI: Failed reading I2C Angle![0m
+[1;31mE (63090) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (63090) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (63090) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (63090) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (63090) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (63110) UI: Failed reading I2C Angle![0m
+[1;31mE (63210) UI: Failed reading I2C Angle![0m
+[1;31mE (63300) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (63300) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (63300) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (63300) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (63300) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (63320) UI: Failed reading I2C Angle![0m
+[1;31mE (63420) UI: Failed reading I2C Angle![0m
+[1;31mE (63510) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (63510) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (63510) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (63510) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (63510) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (63530) UI: Failed reading I2C Angle![0m
+[1;31mE (63630) UI: Failed reading I2C Angle![0m
+[1;31mE (63720) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (63720) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (63720) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (63720) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (63720) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (63740) UI: Failed reading I2C Angle![0m
+[1;31mE (63840) UI: Failed reading I2C Angle![0m
+[1;31mE (63930) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (63930) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (63930) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (63930) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (63930) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (63950) UI: Failed reading I2C Angle![0m
+[1;31mE (64050) UI: Failed reading I2C Angle![0m
+[1;31mE (64140) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (64140) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (64140) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (64140) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (64140) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (64160) UI: Failed reading I2C Angle![0m
+[1;31mE (64260) UI: Failed reading I2C Angle![0m
+[1;31mE (64350) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (64350) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (64350) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (64350) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (64350) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (64370) UI: Failed reading I2C Angle![0m
+[1;31mE (64470) UI: Failed reading I2C Angle![0m
+[1;31mE (64560) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (64560) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (64560) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (64560) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (64560) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (64580) UI: Failed reading I2C Angle![0m
+[1;31mE (64680) UI: Failed reading I2C Angle![0m
+[1;31mE (64770) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (64770) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (64770) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (64770) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (64770) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (64790) UI: Failed reading I2C Angle![0m
+[1;31mE (64890) UI: Failed reading I2C Angle![0m
+[1;31mE (64980) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (64980) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (64980) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (64980) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (64980) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (65000) UI: Failed reading I2C Angle![0m
+[1;31mE (65100) UI: Failed reading I2C Angle![0m
+[1;31mE (65190) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (65190) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (65190) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (65190) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (65190) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (65210) UI: Failed reading I2C Angle![0m
+[1;31mE (65310) UI: Failed reading I2C Angle![0m
+[1;31mE (65400) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (65400) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (65400) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (65400) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (65400) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (65420) UI: Failed reading I2C Angle![0m
+[1;31mE (65520) UI: Failed reading I2C Angle![0m
+[1;31mE (65610) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (65610) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (65610) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (65610) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (65610) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (65630) UI: Failed reading I2C Angle![0m
+[1;31mE (65730) UI: Failed reading I2C Angle![0m
+[1;31mE (65820) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (65820) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (65820) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (65820) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (65820) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (65840) UI: Failed reading I2C Angle![0m
+[1;31mE (65940) UI: Failed reading I2C Angle![0m
+[1;31mE (66030) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (66030) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (66030) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (66030) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (66030) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (66050) UI: Failed reading I2C Angle![0m
+[1;31mE (66150) UI: Failed reading I2C Angle![0m
+[1;31mE (66240) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (66240) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (66240) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (66240) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (66240) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (66260) UI: Failed reading I2C Angle![0m
+[1;31mE (66360) UI: Failed reading I2C Angle![0m
+[1;31mE (66450) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (66450) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (66450) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (66450) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (66450) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (66470) UI: Failed reading I2C Angle![0m
+[1;31mE (66570) UI: Failed reading I2C Angle![0m
+[1;31mE (66660) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (66660) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (66660) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (66660) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (66660) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (66680) UI: Failed reading I2C Angle![0m
+[1;31mE (66780) UI: Failed reading I2C Angle![0m
+[1;31mE (66870) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (66870) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (66870) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (66870) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (66870) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (66890) UI: Failed reading I2C Angle![0m
+[1;31mE (66990) UI: Failed reading I2C Angle![0m
+[1;31mE (67080) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (67080) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (67080) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (67080) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (67080) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (67100) UI: Failed reading I2C Angle![0m
+[1;31mE (67200) UI: Failed reading I2C Angle![0m
+[1;31mE (67290) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (67290) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (67290) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (67290) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (67290) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (67310) UI: Failed reading I2C Angle![0m
+[1;31mE (67410) UI: Failed reading I2C Angle![0m
+[1;31mE (67500) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (67500) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (67500) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (67500) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (67500) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (67520) UI: Failed reading I2C Angle![0m
+[1;31mE (67620) UI: Failed reading I2C Angle![0m
+[1;31mE (67710) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (67710) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (67710) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (67710) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (67710) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (67730) UI: Failed reading I2C Angle![0m
+[1;31mE (67830) UI: Failed reading I2C Angle![0m
+[1;31mE (67920) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (67920) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (67920) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (67920) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (67920) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (67940) UI: Failed reading I2C Angle![0m
+[1;31mE (68040) UI: Failed reading I2C Angle![0m
+[1;31mE (68130) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (68130) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (68130) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (68130) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (68130) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (68150) UI: Failed reading I2C Angle![0m
+[1;31mE (68250) UI: Failed reading I2C Angle![0m
+[1;31mE (68340) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (68340) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (68340) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (68340) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (68340) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (68360) UI: Failed reading I2C Angle![0m
+[1;31mE (68460) UI: Failed reading I2C Angle![0m
+[1;31mE (68550) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (68550) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (68550) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (68550) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (68550) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (68570) UI: Failed reading I2C Angle![0m
+[1;31mE (68670) UI: Failed reading I2C Angle![0m
+[1;31mE (68760) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (68760) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (68760) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (68760) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (68760) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (68780) UI: Failed reading I2C Angle![0m
+[1;31mE (68880) UI: Failed reading I2C Angle![0m
+[1;31mE (68970) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (68970) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (68970) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (68970) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (68970) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (68990) UI: Failed reading I2C Angle![0m
+[1;31mE (69090) UI: Failed reading I2C Angle![0m
+[1;31mE (69180) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (69180) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (69180) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (69180) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (69180) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (69200) UI: Failed reading I2C Angle![0m
+[1;31mE (69300) UI: Failed reading I2C Angle![0m
+[1;31mE (69390) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (69390) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (69390) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (69390) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (69390) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (69410) UI: Failed reading I2C Angle![0m
+[1;31mE (69510) UI: Failed reading I2C Angle![0m
+[1;31mE (69600) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (69600) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (69600) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (69600) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (69600) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (69620) UI: Failed reading I2C Angle![0m
+[1;31mE (69720) UI: Failed reading I2C Angle![0m
+[1;31mE (69810) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (69810) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (69810) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (69810) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (69810) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (69830) UI: Failed reading I2C Angle![0m
+[1;31mE (69930) UI: Failed reading I2C Angle![0m
+[1;31mE (70020) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (70020) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (70020) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (70020) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (70020) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (70040) UI: Failed reading I2C Angle![0m
+[1;31mE (70140) UI: Failed reading I2C Angle![0m
+[1;31mE (70230) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (70230) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (70230) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (70230) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (70230) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (70250) UI: Failed reading I2C Angle![0m
+[1;31mE (70350) UI: Failed reading I2C Angle![0m
+[1;31mE (70440) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (70440) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (70440) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (70440) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (70440) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (70460) UI: Failed reading I2C Angle![0m
+[1;31mE (70560) UI: Failed reading I2C Angle![0m
+[1;31mE (70650) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (70650) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (70650) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (70650) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (70650) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (70670) UI: Failed reading I2C Angle![0m
+[1;31mE (70770) UI: Failed reading I2C Angle![0m
+[0;32mI (70860) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (70870) UI: Failed reading I2C Angle![0m
+[1;31mE (70970) UI: Failed reading I2C Angle![0m
+[0;32mI (71060) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (71070) UI: Failed reading I2C Angle![0m
+[1;31mE (71170) UI: Failed reading I2C Angle![0m
+[0;32mI (71260) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (71270) UI: Failed reading I2C Angle![0m
+[1;31mE (71370) UI: Failed reading I2C Angle![0m
+[0;32mI (71460) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (71470) UI: Failed reading I2C Angle![0m
+[1;31mE (71570) UI: Failed reading I2C Angle![0m
+[0;32mI (71660) ENC_MUX: ENC0(ch0): 331.9° (3776)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (71670) UI: Failed reading I2C Angle![0m
+[1;31mE (71770) UI: Failed reading I2C Angle![0m
+[0;32mI (71860) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (71870) UI: Failed reading I2C Angle![0m
+[1;31mE (71970) UI: Failed reading I2C Angle![0m
+[0;32mI (72060) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 2.6° (30)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (72070) UI: Failed reading I2C Angle![0m
+[1;31mE (72170) UI: Failed reading I2C Angle![0m
+[0;32mI (72260) ENC_MUX: ENC0(ch0): 330.1° (3756)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 337.3° (3838)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (72270) UI: Failed reading I2C Angle![0m
+[1;31mE (72370) UI: Failed reading I2C Angle![0m
+[0;32mI (72460) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 301.4° (3429)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (72470) UI: Failed reading I2C Angle![0m
+[1;31mE (72570) UI: Failed reading I2C Angle![0m
+[0;32mI (72660) ENC_MUX: ENC0(ch0): 331.1° (3767)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 308.6° (3511)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (72670) UI: Failed reading I2C Angle![0m
+[1;31mE (72770) UI: Failed reading I2C Angle![0m
+[0;32mI (72860) ENC_MUX: ENC0(ch0): 323.8° (3684)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 34.1° (388)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (72870) UI: Failed reading I2C Angle![0m
+[1;31mE (72970) UI: Failed reading I2C Angle![0m
+[0;32mI (73060) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 54.2° (617)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (73070) UI: Failed reading I2C Angle![0m
+[1;31mE (73170) UI: Failed reading I2C Angle![0m
+[0;32mI (73260) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 14.0° (159)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (73270) UI: Failed reading I2C Angle![0m
+[1;31mE (73370) UI: Failed reading I2C Angle![0m
+[0;32mI (73460) ENC_MUX: ENC0(ch0): 324.1° (3688)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 12.0° (137)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (73470) UI: Failed reading I2C Angle![0m
+[1;31mE (73570) UI: Failed reading I2C Angle![0m
+[0;32mI (73660) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 9.9° (113)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (73670) UI: Failed reading I2C Angle![0m
+[1;31mE (73770) UI: Failed reading I2C Angle![0m
+[0;32mI (73860) ENC_MUX: ENC0(ch0): 324.2° (3689)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 24.5° (279)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (73870) UI: Failed reading I2C Angle![0m
+[1;31mE (73970) UI: Failed reading I2C Angle![0m
+[0;32mI (74060) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 29.4° (334)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (74070) UI: Failed reading I2C Angle![0m
+[1;31mE (74170) UI: Failed reading I2C Angle![0m
+[0;32mI (74260) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 29.7° (338)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (74270) UI: Failed reading I2C Angle![0m
+[1;31mE (74370) UI: Failed reading I2C Angle![0m
+[0;32mI (74460) ENC_MUX: ENC0(ch0): 323.1° (3676)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 31.2° (355)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (74470) UI: Failed reading I2C Angle![0m
+[1;31mE (74570) UI: Failed reading I2C Angle![0m
+[0;32mI (74660) ENC_MUX: ENC0(ch0): 332.3° (3781)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 31.6° (359)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (74670) UI: Failed reading I2C Angle![0m
+[1;31mE (74770) UI: Failed reading I2C Angle![0m
+[0;32mI (74860) ENC_MUX: ENC0(ch0): 343.7° (3910)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 31.7° (361)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (74870) UI: Failed reading I2C Angle![0m
+[1;31mE (74970) UI: Failed reading I2C Angle![0m
+[0;32mI (75060) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 32.3° (367)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (75070) UI: Failed reading I2C Angle![0m
+[1;31mE (75170) UI: Failed reading I2C Angle![0m
+[0;32mI (75260) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 32.0° (364)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (75270) UI: Failed reading I2C Angle![0m
+[1;31mE (75370) UI: Failed reading I2C Angle![0m
+[0;32mI (75460) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 32.7° (372)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (75470) UI: Failed reading I2C Angle![0m
+[1;31mE (75570) UI: Failed reading I2C Angle![0m
+[0;32mI (75660) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 32.7° (372)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (75670) UI: Failed reading I2C Angle![0m
+[1;31mE (75770) UI: Failed reading I2C Angle![0m
+[0;32mI (75860) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 32.8° (373)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (75870) UI: Failed reading I2C Angle![0m
+[1;31mE (75970) UI: Failed reading I2C Angle![0m
+[0;32mI (76060) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 34.9° (397)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (76070) UI: Failed reading I2C Angle![0m
+[1;31mE (76170) UI: Failed reading I2C Angle![0m
+[0;32mI (76260) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 37.7° (429)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (76270) UI: Failed reading I2C Angle![0m
+[1;31mE (76370) UI: Failed reading I2C Angle![0m
+[0;32mI (76460) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 35.7° (406)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (76470) UI: Failed reading I2C Angle![0m
+[1;31mE (76570) UI: Failed reading I2C Angle![0m
+[0;32mI (76660) ENC_MUX: ENC0(ch0): 334.2° (3803)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 33.8° (384)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (76670) UI: Failed reading I2C Angle![0m
+[1;31mE (76770) UI: Failed reading I2C Angle![0m
+[0;32mI (76860) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 34.0° (387)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (76870) UI: Failed reading I2C Angle![0m
+[1;31mE (76970) UI: Failed reading I2C Angle![0m
+[0;32mI (77060) ENC_MUX: ENC0(ch0): 341.3° (3883)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 35.2° (400)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (77070) UI: Failed reading I2C Angle![0m
+[1;31mE (77170) UI: Failed reading I2C Angle![0m
+[0;32mI (77260) ENC_MUX: ENC0(ch0): 330.9° (3765)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 36.0° (410)  |  ENC3(ch7): 18.8° (214)[0m
+[1;31mE (77270) UI: Failed reading I2C Angle![0m
+[1;31mE (77370) UI: Failed reading I2C Angle![0m
+[0;32mI (77460) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (77470) UI: Failed reading I2C Angle![0m
+[1;31mE (77570) UI: Failed reading I2C Angle![0m
+[0;32mI (77660) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (77670) UI: Failed reading I2C Angle![0m
+[1;31mE (77770) UI: Failed reading I2C Angle![0m
+[0;32mI (77860) ENC_MUX: ENC0(ch0): 316.1° (3596)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 7.9° (90)[0m
+[1;31mE (77870) UI: Failed reading I2C Angle![0m
+[1;31mE (77970) UI: Failed reading I2C Angle![0m
+[0;32mI (78060) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (78070) UI: Failed reading I2C Angle![0m
+[1;31mE (78170) UI: Failed reading I2C Angle![0m
+[0;32mI (78260) ENC_MUX: ENC0(ch0): 323.6° (3682)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (78270) UI: Failed reading I2C Angle![0m
+[1;31mE (78370) UI: Failed reading I2C Angle![0m
+[0;32mI (78460) ENC_MUX: ENC0(ch0): 341.7° (3888)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (78470) UI: Failed reading I2C Angle![0m
+[1;31mE (78570) UI: Failed reading I2C Angle![0m
+[0;32mI (78660) ENC_MUX: ENC0(ch0): 331.3° (3770)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (78670) UI: Failed reading I2C Angle![0m
+[1;31mE (78770) UI: Failed reading I2C Angle![0m
+[0;32mI (78860) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (78870) UI: Failed reading I2C Angle![0m
+[1;31mE (78970) UI: Failed reading I2C Angle![0m
+[0;32mI (79060) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (79070) UI: Failed reading I2C Angle![0m
+[1;31mE (79170) UI: Failed reading I2C Angle![0m
+[0;32mI (79260) ENC_MUX: ENC0(ch0): 341.1° (3881)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (79270) UI: Failed reading I2C Angle![0m
+[1;31mE (79370) UI: Failed reading I2C Angle![0m
+[0;32mI (79460) ENC_MUX: ENC0(ch0): 334.6° (3807)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.2° (230)[0m
+[1;31mE (79470) UI: Failed reading I2C Angle![0m
+[1;31mE (79570) UI: Failed reading I2C Angle![0m
+[0;32mI (79660) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (79670) UI: Failed reading I2C Angle![0m
+[1;31mE (79770) UI: Failed reading I2C Angle![0m
+[0;32mI (79860) ENC_MUX: ENC0(ch0): 321.4° (3657)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (79870) UI: Failed reading I2C Angle![0m
+[1;31mE (79970) UI: Failed reading I2C Angle![0m
+[0;32mI (80060) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 36.7° (418)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (80070) UI: Failed reading I2C Angle![0m
+[1;31mE (80170) UI: Failed reading I2C Angle![0m
+[0;32mI (80260) ENC_MUX: ENC0(ch0): 325.2° (3700)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 81.7° (929)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (80270) UI: Failed reading I2C Angle![0m
+[1;31mE (80370) UI: Failed reading I2C Angle![0m
+[0;32mI (80460) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 71.9° (818)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (80470) UI: Failed reading I2C Angle![0m
+[1;31mE (80570) UI: Failed reading I2C Angle![0m
+[0;32mI (80660) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 45.7° (520)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (80670) UI: Failed reading I2C Angle![0m
+[1;31mE (80770) UI: Failed reading I2C Angle![0m
+[0;32mI (80860) ENC_MUX: ENC0(ch0): 334.8° (3809)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 64.3° (732)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (80870) UI: Failed reading I2C Angle![0m
+[1;31mE (80970) UI: Failed reading I2C Angle![0m
+[0;32mI (81060) ENC_MUX: ENC0(ch0): 324.3° (3690)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 38.6° (439)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (81070) UI: Failed reading I2C Angle![0m
+[1;31mE (81170) UI: Failed reading I2C Angle![0m
+[0;32mI (81260) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 356.0° (4051)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (81270) UI: Failed reading I2C Angle![0m
+[1;31mE (81370) UI: Failed reading I2C Angle![0m
+[0;32mI (81460) ENC_MUX: ENC0(ch0): 333.6° (3796)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 11.4° (130)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (81470) UI: Failed reading I2C Angle![0m
+[1;31mE (81570) UI: Failed reading I2C Angle![0m
+[0;32mI (81660) ENC_MUX: ENC0(ch0): 321.9° (3663)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 17.2° (196)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (81670) UI: Failed reading I2C Angle![0m
+[1;31mE (81770) UI: Failed reading I2C Angle![0m
+[0;32mI (81860) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 31.4° (357)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (81870) UI: Failed reading I2C Angle![0m
+[1;31mE (81970) UI: Failed reading I2C Angle![0m
+[0;32mI (82060) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 17.1° (195)  |  ENC3(ch7): 9.3° (106)[0m
+[1;31mE (82070) UI: Failed reading I2C Angle![0m
+[1;31mE (82170) UI: Failed reading I2C Angle![0m
+[0;32mI (82260) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 8.7° (99)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (82270) UI: Failed reading I2C Angle![0m
+[1;31mE (82370) UI: Failed reading I2C Angle![0m
+[0;32mI (82460) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 358.6° (4080)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (82470) UI: Failed reading I2C Angle![0m
+[1;31mE (82570) UI: Failed reading I2C Angle![0m
+[0;32mI (82660) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 11.6° (132)  |  ENC3(ch7): 29.2° (332)[0m
+[1;31mE (82670) UI: Failed reading I2C Angle![0m
+[1;31mE (82770) UI: Failed reading I2C Angle![0m
+[0;32mI (82860) ENC_MUX: ENC0(ch0): 339.5° (3863)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 26.7° (304)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (82870) UI: Failed reading I2C Angle![0m
+[1;31mE (82970) UI: Failed reading I2C Angle![0m
+[0;32mI (83060) ENC_MUX: ENC0(ch0): 331.5° (3772)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 22.9° (260)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (83070) UI: Failed reading I2C Angle![0m
+[1;31mE (83170) UI: Failed reading I2C Angle![0m
+[0;32mI (83260) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 12.2° (139)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (83270) UI: Failed reading I2C Angle![0m
+[1;31mE (83370) UI: Failed reading I2C Angle![0m
+[0;32mI (83460) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 13.9° (158)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (83470) UI: Failed reading I2C Angle![0m
+[1;31mE (83570) UI: Failed reading I2C Angle![0m
+[0;32mI (83660) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 17.0° (193)  |  ENC3(ch7): 8.9° (101)[0m
+[1;31mE (83670) UI: Failed reading I2C Angle![0m
+[1;31mE (83770) UI: Failed reading I2C Angle![0m
+[0;32mI (83860) ENC_MUX: ENC0(ch0): 349.5° (3976)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 27.4° (312)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (83870) UI: Failed reading I2C Angle![0m
+[1;31mE (83970) UI: Failed reading I2C Angle![0m
+[0;32mI (84060) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 26.9° (306)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (84070) UI: Failed reading I2C Angle![0m
+[1;31mE (84170) UI: Failed reading I2C Angle![0m
+[0;32mI (84260) ENC_MUX: ENC0(ch0): 333.4° (3793)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 12.4° (141)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (84270) UI: Failed reading I2C Angle![0m
+[1;31mE (84370) UI: Failed reading I2C Angle![0m
+[0;32mI (84460) ENC_MUX: ENC0(ch0): 340.8° (3877)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (84470) UI: Failed reading I2C Angle![0m
+[1;31mE (84570) UI: Failed reading I2C Angle![0m
+[0;32mI (84660) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (84670) UI: Failed reading I2C Angle![0m
+[1;31mE (84770) UI: Failed reading I2C Angle![0m
+[0;32mI (84860) ENC_MUX: ENC0(ch0): 332.6° (3784)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 349.9° (3981)[0m
+[1;31mE (84870) UI: Failed reading I2C Angle![0m
+[1;31mE (84970) UI: Failed reading I2C Angle![0m
+[0;32mI (85060) ENC_MUX: ENC0(ch0): 339.7° (3865)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (85070) UI: Failed reading I2C Angle![0m
+[1;31mE (85170) UI: Failed reading I2C Angle![0m
+[0;32mI (85260) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (85270) UI: Failed reading I2C Angle![0m
+[1;31mE (85370) UI: Failed reading I2C Angle![0m
+[0;32mI (85460) ENC_MUX: ENC0(ch0): 341.1° (3881)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.1° (217)[0m
+[1;31mE (85470) UI: Failed reading I2C Angle![0m
+[1;31mE (85570) UI: Failed reading I2C Angle![0m
+[0;32mI (85660) ENC_MUX: ENC0(ch0): 331.7° (3774)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (85670) UI: Failed reading I2C Angle![0m
+[1;31mE (85770) UI: Failed reading I2C Angle![0m
+[0;32mI (85860) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (85870) UI: Failed reading I2C Angle![0m
+[1;31mE (85970) UI: Failed reading I2C Angle![0m
+[0;32mI (86060) ENC_MUX: ENC0(ch0): 321.6° (3659)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (86070) UI: Failed reading I2C Angle![0m
+[1;31mE (86170) UI: Failed reading I2C Angle![0m
+[0;32mI (86260) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (86270) UI: Failed reading I2C Angle![0m
+[1;31mE (86370) UI: Failed reading I2C Angle![0m
+[0;32mI (86460) ENC_MUX: ENC0(ch0): 324.8° (3695)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (86470) UI: Failed reading I2C Angle![0m
+[1;31mE (86570) UI: Failed reading I2C Angle![0m
+[0;32mI (86660) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (86670) UI: Failed reading I2C Angle![0m
+[1;31mE (86770) UI: Failed reading I2C Angle![0m
+[0;32mI (86860) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (86870) UI: Failed reading I2C Angle![0m
+[1;31mE (86970) UI: Failed reading I2C Angle![0m
+[0;32mI (87060) ENC_MUX: ENC0(ch0): 330.6° (3761)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (87070) UI: Failed reading I2C Angle![0m
+[1;31mE (87170) UI: Failed reading I2C Angle![0m
+[0;32mI (87260) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (87270) UI: Failed reading I2C Angle![0m
+[1;31mE (87370) UI: Failed reading I2C Angle![0m
+[0;32mI (87460) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (87470) UI: Failed reading I2C Angle![0m
+[1;31mE (87570) UI: Failed reading I2C Angle![0m
+[0;32mI (87660) ENC_MUX: ENC0(ch0): 324.2° (3689)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (87670) UI: Failed reading I2C Angle![0m
+[1;31mE (87770) UI: Failed reading I2C Angle![0m
+[0;32mI (87860) ENC_MUX: ENC0(ch0): 305.1° (3471)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (87870) UI: Failed reading I2C Angle![0m
+[1;31mE (87970) UI: Failed reading I2C Angle![0m
+[0;32mI (88060) ENC_MUX: ENC0(ch0): 330.9° (3765)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (88070) UI: Failed reading I2C Angle![0m
+[1;31mE (88170) UI: Failed reading I2C Angle![0m
+[0;32mI (88260) ENC_MUX: ENC0(ch0): 321.9° (3663)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (88270) UI: Failed reading I2C Angle![0m
+[1;31mE (88370) UI: Failed reading I2C Angle![0m
+[0;32mI (88460) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (88470) UI: Failed reading I2C Angle![0m
+[1;31mE (88570) UI: Failed reading I2C Angle![0m
+[0;32mI (88660) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (88670) UI: Failed reading I2C Angle![0m
+[1;31mE (88770) UI: Failed reading I2C Angle![0m
+[0;32mI (88860) ENC_MUX: ENC0(ch0): 333.0° (3789)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (88870) UI: Failed reading I2C Angle![0m
+[1;31mE (88970) UI: Failed reading I2C Angle![0m
+[0;32mI (89060) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (89070) UI: Failed reading I2C Angle![0m
+[1;31mE (89170) UI: Failed reading I2C Angle![0m
+[0;32mI (89260) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (89270) UI: Failed reading I2C Angle![0m
+[1;31mE (89370) UI: Failed reading I2C Angle![0m
+[0;32mI (89460) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (89470) UI: Failed reading I2C Angle![0m
+[1;31mE (89570) UI: Failed reading I2C Angle![0m
+[0;32mI (89660) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (89670) UI: Failed reading I2C Angle![0m
+[1;31mE (89770) UI: Failed reading I2C Angle![0m
+[0;32mI (89860) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (89870) UI: Failed reading I2C Angle![0m
+[1;31mE (89970) UI: Failed reading I2C Angle![0m
+[0;32mI (90060) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (90070) UI: Failed reading I2C Angle![0m
+[1;31mE (90170) UI: Failed reading I2C Angle![0m
+[0;32mI (90260) ENC_MUX: ENC0(ch0): 334.1° (3801)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (90270) UI: Failed reading I2C Angle![0m
+[1;31mE (90370) UI: Failed reading I2C Angle![0m
+[0;32mI (90460) ENC_MUX: ENC0(ch0): 332.7° (3785)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (90470) UI: Failed reading I2C Angle![0m
+[1;31mE (90570) UI: Failed reading I2C Angle![0m
+[0;32mI (90660) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (90670) UI: Failed reading I2C Angle![0m
+[1;31mE (90770) UI: Failed reading I2C Angle![0m
+[0;32mI (90860) ENC_MUX: ENC0(ch0): 334.2° (3803)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (90870) UI: Failed reading I2C Angle![0m
+[1;31mE (90970) UI: Failed reading I2C Angle![0m
+[0;32mI (91060) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (91070) UI: Failed reading I2C Angle![0m
+[1;31mE (91170) UI: Failed reading I2C Angle![0m
+[0;32mI (91260) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (91270) UI: Failed reading I2C Angle![0m
+[1;31mE (91370) UI: Failed reading I2C Angle![0m
+[0;32mI (91460) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (91470) UI: Failed reading I2C Angle![0m
+[1;31mE (91570) UI: Failed reading I2C Angle![0m
+[0;32mI (91660) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 18.8° (214)[0m
+[1;31mE (91670) UI: Failed reading I2C Angle![0m
+[1;31mE (91770) UI: Failed reading I2C Angle![0m
+[0;32mI (91860) ENC_MUX: ENC0(ch0): 342.7° (3899)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (91870) UI: Failed reading I2C Angle![0m
+[1;31mE (91970) UI: Failed reading I2C Angle![0m
+[0;32mI (92060) ENC_MUX: ENC0(ch0): 339.3° (3861)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (92070) UI: Failed reading I2C Angle![0m
+[1;31mE (92170) UI: Failed reading I2C Angle![0m
+[0;32mI (92260) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (92270) UI: Failed reading I2C Angle![0m
+[1;31mE (92370) UI: Failed reading I2C Angle![0m
+[0;32mI (92460) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (92470) UI: Failed reading I2C Angle![0m
+[1;31mE (92570) UI: Failed reading I2C Angle![0m
+[1;31mE (92660) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (92660) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (92660) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (92660) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (92660) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (92680) UI: Failed reading I2C Angle![0m
+[1;31mE (92780) UI: Failed reading I2C Angle![0m
+[0;32mI (92870) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (92880) UI: Failed reading I2C Angle![0m
+[1;31mE (92980) UI: Failed reading I2C Angle![0m
+[0;32mI (93070) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (93080) UI: Failed reading I2C Angle![0m
+[1;31mE (93180) UI: Failed reading I2C Angle![0m
+[0;32mI (93270) ENC_MUX: ENC0(ch0): 331.7° (3774)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (93280) UI: Failed reading I2C Angle![0m
+[1;31mE (93380) UI: Failed reading I2C Angle![0m
+[0;32mI (93470) ENC_MUX: ENC0(ch0): 332.1° (3778)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 348.8° (3968)[0m
+[1;31mE (93480) UI: Failed reading I2C Angle![0m
+[1;31mE (93580) UI: Failed reading I2C Angle![0m
+[0;32mI (93670) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (93680) UI: Failed reading I2C Angle![0m
+[1;31mE (93780) UI: Failed reading I2C Angle![0m
+[0;32mI (93870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.0° (228)[0m
+[1;31mE (93880) UI: Failed reading I2C Angle![0m
+[1;31mE (93980) UI: Failed reading I2C Angle![0m
+[0;32mI (94070) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (94080) UI: Failed reading I2C Angle![0m
+[1;31mE (94180) UI: Failed reading I2C Angle![0m
+[0;32mI (94270) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (94280) UI: Failed reading I2C Angle![0m
+[1;31mE (94380) UI: Failed reading I2C Angle![0m
+[0;32mI (94470) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (94480) UI: Failed reading I2C Angle![0m
+[1;31mE (94580) UI: Failed reading I2C Angle![0m
+[0;32mI (94670) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (94680) UI: Failed reading I2C Angle![0m
+[1;31mE (94780) UI: Failed reading I2C Angle![0m
+[0;32mI (94870) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (94880) UI: Failed reading I2C Angle![0m
+[1;31mE (94980) UI: Failed reading I2C Angle![0m
+[0;32mI (95070) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (95080) UI: Failed reading I2C Angle![0m
+[1;31mE (95180) UI: Failed reading I2C Angle![0m
+[0;32mI (95270) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (95280) UI: Failed reading I2C Angle![0m
+[1;31mE (95380) UI: Failed reading I2C Angle![0m
+[0;32mI (95470) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (95480) UI: Failed reading I2C Angle![0m
+[1;31mE (95580) UI: Failed reading I2C Angle![0m
+[0;32mI (95670) ENC_MUX: ENC0(ch0): 323.6° (3682)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (95680) UI: Failed reading I2C Angle![0m
+[1;31mE (95780) UI: Failed reading I2C Angle![0m
+[0;32mI (95870) ENC_MUX: ENC0(ch0): 331.1° (3767)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (95880) UI: Failed reading I2C Angle![0m
+[1;31mE (95980) UI: Failed reading I2C Angle![0m
+[0;32mI (96070) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (96080) UI: Failed reading I2C Angle![0m
+[1;31mE (96180) UI: Failed reading I2C Angle![0m
+[0;32mI (96270) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (96280) UI: Failed reading I2C Angle![0m
+[1;31mE (96380) UI: Failed reading I2C Angle![0m
+[0;32mI (96470) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (96480) UI: Failed reading I2C Angle![0m
+[1;31mE (96580) UI: Failed reading I2C Angle![0m
+[0;32mI (96670) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (96680) UI: Failed reading I2C Angle![0m
+[1;31mE (96780) UI: Failed reading I2C Angle![0m
+[0;32mI (96870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 350.1° (3983)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (96880) UI: Failed reading I2C Angle![0m
+[1;31mE (96980) UI: Failed reading I2C Angle![0m
+[0;32mI (97070) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (97080) UI: Failed reading I2C Angle![0m
+[1;31mE (97180) UI: Failed reading I2C Angle![0m
+[0;32mI (97270) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (97280) UI: Failed reading I2C Angle![0m
+[1;31mE (97380) UI: Failed reading I2C Angle![0m
+[0;32mI (97470) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (97480) UI: Failed reading I2C Angle![0m
+[1;31mE (97580) UI: Failed reading I2C Angle![0m
+[0;32mI (97670) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (97680) UI: Failed reading I2C Angle![0m
+[1;31mE (97780) UI: Failed reading I2C Angle![0m
+[0;32mI (97870) ENC_MUX: ENC0(ch0): 332.7° (3785)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (97880) UI: Failed reading I2C Angle![0m
+[1;31mE (97980) UI: Failed reading I2C Angle![0m
+[0;32mI (98070) ENC_MUX: ENC0(ch0): 329.9° (3754)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (98080) UI: Failed reading I2C Angle![0m
+[1;31mE (98180) UI: Failed reading I2C Angle![0m
+[0;32mI (98270) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (98280) UI: Failed reading I2C Angle![0m
+[1;31mE (98380) UI: Failed reading I2C Angle![0m
+[0;32mI (98470) ENC_MUX: ENC0(ch0): 329.2° (3745)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (98480) UI: Failed reading I2C Angle![0m
+[1;31mE (98580) UI: Failed reading I2C Angle![0m
+[0;32mI (98670) ENC_MUX: ENC0(ch0): 352.5° (4011)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (98680) UI: Failed reading I2C Angle![0m
+[1;31mE (98780) UI: Failed reading I2C Angle![0m
+[0;32mI (98870) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (98880) UI: Failed reading I2C Angle![0m
+[1;31mE (98980) UI: Failed reading I2C Angle![0m
+[0;32mI (99070) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (99080) UI: Failed reading I2C Angle![0m
+[1;31mE (99180) UI: Failed reading I2C Angle![0m
+[0;32mI (99270) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (99280) UI: Failed reading I2C Angle![0m
+[1;31mE (99380) UI: Failed reading I2C Angle![0m
+[0;32mI (99470) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (99480) UI: Failed reading I2C Angle![0m
+[1;31mE (99580) UI: Failed reading I2C Angle![0m
+[0;32mI (99670) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (99680) UI: Failed reading I2C Angle![0m
+[1;31mE (99780) UI: Failed reading I2C Angle![0m
+[0;32mI (99870) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (99880) UI: Failed reading I2C Angle![0m
+[1;31mE (99980) UI: Failed reading I2C Angle![0m
+[0;32mI (100070) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (100080) UI: Failed reading I2C Angle![0m
+[1;31mE (100180) UI: Failed reading I2C Angle![0m
+[0;32mI (100270) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 357.7° (4070)[0m
+[1;31mE (100280) UI: Failed reading I2C Angle![0m
+[1;31mE (100380) UI: Failed reading I2C Angle![0m
+[0;32mI (100470) ENC_MUX: ENC0(ch0): 330.4° (3759)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (100480) UI: Failed reading I2C Angle![0m
+[1;31mE (100580) UI: Failed reading I2C Angle![0m
+[0;32mI (100670) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (100680) UI: Failed reading I2C Angle![0m
+[1;31mE (100780) UI: Failed reading I2C Angle![0m
+[0;32mI (100870) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.5° (222)[0m
+[1;31mE (100880) UI: Failed reading I2C Angle![0m
+[1;31mE (100980) UI: Failed reading I2C Angle![0m
+[0;32mI (101070) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (101080) UI: Failed reading I2C Angle![0m
+[1;31mE (101180) UI: Failed reading I2C Angle![0m
+[0;32mI (101270) ENC_MUX: ENC0(ch0): 227.2° (2585)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (101280) UI: Failed reading I2C Angle![0m
+[1;31mE (101380) UI: Failed reading I2C Angle![0m
+[0;32mI (101470) ENC_MUX: ENC0(ch0): 219.9° (2502)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.0° (228)[0m
+[1;31mE (101480) UI: Failed reading I2C Angle![0m
+[1;31mE (101580) UI: Failed reading I2C Angle![0m
+[0;32mI (101670) ENC_MUX: ENC0(ch0): 227.1° (2584)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (101680) UI: Failed reading I2C Angle![0m
+[1;31mE (101780) UI: Failed reading I2C Angle![0m
+[0;32mI (101870) ENC_MUX: ENC0(ch0): 267.5° (3044)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (101880) UI: Failed reading I2C Angle![0m
+[1;31mE (101980) UI: Failed reading I2C Angle![0m
+[0;32mI (102070) ENC_MUX: ENC0(ch0): 335.8° (3821)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (102080) UI: Failed reading I2C Angle![0m
+[1;31mE (102180) UI: Failed reading I2C Angle![0m
+[0;32mI (102270) ENC_MUX: ENC0(ch0): 251.0° (2856)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (102280) UI: Failed reading I2C Angle![0m
+[1;31mE (102380) UI: Failed reading I2C Angle![0m
+[0;32mI (102470) ENC_MUX: ENC0(ch0): 66.0° (751)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (102480) UI: Failed reading I2C Angle![0m
+[1;31mE (102580) UI: Failed reading I2C Angle![0m
+[0;32mI (102670) ENC_MUX: ENC0(ch0): 91.1° (1036)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (102680) UI: Failed reading I2C Angle![0m
+[1;31mE (102780) UI: Failed reading I2C Angle![0m
+[0;32mI (102870) ENC_MUX: ENC0(ch0): 112.6° (1281)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (102880) UI: Failed reading I2C Angle![0m
+[1;31mE (102980) UI: Failed reading I2C Angle![0m
+[0;32mI (103070) ENC_MUX: ENC0(ch0): 108.6° (1236)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (103080) UI: Failed reading I2C Angle![0m
+[1;31mE (103180) UI: Failed reading I2C Angle![0m
+[0;32mI (103270) ENC_MUX: ENC0(ch0): 72.1° (820)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (103280) UI: Failed reading I2C Angle![0m
+[1;31mE (103380) UI: Failed reading I2C Angle![0m
+[0;32mI (103470) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (103480) UI: Failed reading I2C Angle![0m
+[1;31mE (103580) UI: Failed reading I2C Angle![0m
+[0;32mI (103670) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (103680) UI: Failed reading I2C Angle![0m
+[1;31mE (103780) UI: Failed reading I2C Angle![0m
+[0;32mI (103870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (103880) UI: Failed reading I2C Angle![0m
+[1;31mE (103980) UI: Failed reading I2C Angle![0m
+[0;32mI (104070) ENC_MUX: ENC0(ch0): 63.8° (726)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (104080) UI: Failed reading I2C Angle![0m
+[1;31mE (104180) UI: Failed reading I2C Angle![0m
+[0;32mI (104270) ENC_MUX: ENC0(ch0): 285.3° (3246)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (104280) UI: Failed reading I2C Angle![0m
+[1;31mE (104380) UI: Failed reading I2C Angle![0m
+[0;32mI (104470) ENC_MUX: ENC0(ch0): 277.0° (3152)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (104480) UI: Failed reading I2C Angle![0m
+[1;31mE (104580) UI: Failed reading I2C Angle![0m
+[0;32mI (104670) ENC_MUX: ENC0(ch0): 250.7° (2852)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (104680) UI: Failed reading I2C Angle![0m
+[1;31mE (104780) UI: Failed reading I2C Angle![0m
+[0;32mI (104870) ENC_MUX: ENC0(ch0): 250.4° (2849)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (104880) UI: Failed reading I2C Angle![0m
+[1;31mE (104980) UI: Failed reading I2C Angle![0m
+[0;32mI (105070) ENC_MUX: ENC0(ch0): 254.5° (2896)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (105080) UI: Failed reading I2C Angle![0m
+[1;31mE (105180) UI: Failed reading I2C Angle![0m
+[0;32mI (105270) ENC_MUX: ENC0(ch0): 281.8° (3206)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (105280) UI: Failed reading I2C Angle![0m
+[1;31mE (105380) UI: Failed reading I2C Angle![0m
+[0;32mI (105470) ENC_MUX: ENC0(ch0): 81.0° (922)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (105480) UI: Failed reading I2C Angle![0m
+[1;31mE (105580) UI: Failed reading I2C Angle![0m
+[0;32mI (105670) ENC_MUX: ENC0(ch0): 160.1° (1822)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (105680) UI: Failed reading I2C Angle![0m
+[1;31mE (105780) UI: Failed reading I2C Angle![0m
+[0;32mI (105870) ENC_MUX: ENC0(ch0): 192.4° (2189)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (105880) UI: Failed reading I2C Angle![0m
+[1;31mE (105980) UI: Failed reading I2C Angle![0m
+[0;32mI (106070) ENC_MUX: ENC0(ch0): 192.0° (2185)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (106080) UI: Failed reading I2C Angle![0m
+[1;31mE (106180) UI: Failed reading I2C Angle![0m
+[0;32mI (106270) ENC_MUX: ENC0(ch0): 91.2° (1038)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (106280) UI: Failed reading I2C Angle![0m
+[1;31mE (106380) UI: Failed reading I2C Angle![0m
+[0;32mI (106470) ENC_MUX: ENC0(ch0): 85.1° (968)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (106480) UI: Failed reading I2C Angle![0m
+[1;31mE (106580) UI: Failed reading I2C Angle![0m
+[0;32mI (106670) ENC_MUX: ENC0(ch0): 67.7° (770)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (106680) UI: Failed reading I2C Angle![0m
+[1;31mE (106780) UI: Failed reading I2C Angle![0m
+[0;32mI (106870) ENC_MUX: ENC0(ch0): 71.7° (816)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (106880) UI: Failed reading I2C Angle![0m
+[1;31mE (106980) UI: Failed reading I2C Angle![0m
+[0;32mI (107070) ENC_MUX: ENC0(ch0): 129.7° (1476)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (107080) UI: Failed reading I2C Angle![0m
+[1;31mE (107180) UI: Failed reading I2C Angle![0m
+[0;32mI (107270) ENC_MUX: ENC0(ch0): 166.8° (1898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (107280) UI: Failed reading I2C Angle![0m
+[1;31mE (107380) UI: Failed reading I2C Angle![0m
+[0;32mI (107470) ENC_MUX: ENC0(ch0): 138.6° (1577)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (107480) UI: Failed reading I2C Angle![0m
+[1;31mE (107580) UI: Failed reading I2C Angle![0m
+[0;32mI (107670) ENC_MUX: ENC0(ch0): 46.9° (534)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (107680) UI: Failed reading I2C Angle![0m
+[1;31mE (107780) UI: Failed reading I2C Angle![0m
+[0;32mI (107870) ENC_MUX: ENC0(ch0): 97.3° (1107)  |  ENC1(ch1): 350.7° (3990)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (107880) UI: Failed reading I2C Angle![0m
+[1;31mE (107980) UI: Failed reading I2C Angle![0m
+[0;32mI (108070) ENC_MUX: ENC0(ch0): 109.1° (1241)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (108080) UI: Failed reading I2C Angle![0m
+[1;31mE (108180) UI: Failed reading I2C Angle![0m
+[0;32mI (108270) ENC_MUX: ENC0(ch0): 124.5° (1416)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (108280) UI: Failed reading I2C Angle![0m
+[1;31mE (108380) UI: Failed reading I2C Angle![0m
+[0;32mI (108470) ENC_MUX: ENC0(ch0): 138.3° (1573)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (108480) UI: Failed reading I2C Angle![0m
+[1;31mE (108580) UI: Failed reading I2C Angle![0m
+[0;32mI (108670) ENC_MUX: ENC0(ch0): 144.4° (1643)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (108680) UI: Failed reading I2C Angle![0m
+[1;31mE (108780) UI: Failed reading I2C Angle![0m
+[0;32mI (108870) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (108880) UI: Failed reading I2C Angle![0m
+[1;31mE (108980) UI: Failed reading I2C Angle![0m
+[0;32mI (109070) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (109080) UI: Failed reading I2C Angle![0m
+[1;31mE (109180) UI: Failed reading I2C Angle![0m
+[0;32mI (109270) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (109280) UI: Failed reading I2C Angle![0m
+[1;31mE (109380) UI: Failed reading I2C Angle![0m
+[0;32mI (109470) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (109480) UI: Failed reading I2C Angle![0m
+[1;31mE (109580) UI: Failed reading I2C Angle![0m
+[0;32mI (109670) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (109680) UI: Failed reading I2C Angle![0m
+[1;31mE (109780) UI: Failed reading I2C Angle![0m
+[0;32mI (109870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (109880) UI: Failed reading I2C Angle![0m
+[1;31mE (109980) UI: Failed reading I2C Angle![0m
+[0;32mI (110070) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (110080) UI: Failed reading I2C Angle![0m
+[1;31mE (110180) UI: Failed reading I2C Angle![0m
+[0;32mI (110270) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (110280) UI: Failed reading I2C Angle![0m
+[1;31mE (110380) UI: Failed reading I2C Angle![0m
+[0;32mI (110470) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (110480) UI: Failed reading I2C Angle![0m
+[1;31mE (110580) UI: Failed reading I2C Angle![0m
+[0;32mI (110670) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (110680) UI: Failed reading I2C Angle![0m
+[1;31mE (110780) UI: Failed reading I2C Angle![0m
+[0;32mI (110870) ENC_MUX: ENC0(ch0): 323.3° (3678)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (110880) UI: Failed reading I2C Angle![0m
+[1;31mE (110980) UI: Failed reading I2C Angle![0m
+[0;32mI (111070) ENC_MUX: ENC0(ch0): 333.5° (3795)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (111080) UI: Failed reading I2C Angle![0m
+[1;31mE (111180) UI: Failed reading I2C Angle![0m
+[0;32mI (111270) ENC_MUX: ENC0(ch0): 321.9° (3663)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (111280) UI: Failed reading I2C Angle![0m
+[1;31mE (111380) UI: Failed reading I2C Angle![0m
+[0;32mI (111470) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (111480) UI: Failed reading I2C Angle![0m
+[1;31mE (111580) UI: Failed reading I2C Angle![0m
+[0;32mI (111670) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (111680) UI: Failed reading I2C Angle![0m
+[1;31mE (111780) UI: Failed reading I2C Angle![0m
+[0;32mI (111870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (111880) UI: Failed reading I2C Angle![0m
+[1;31mE (111980) UI: Failed reading I2C Angle![0m
+[0;32mI (112070) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (112080) UI: Failed reading I2C Angle![0m
+[1;31mE (112180) UI: Failed reading I2C Angle![0m
+[0;32mI (112270) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (112280) UI: Failed reading I2C Angle![0m
+[1;31mE (112380) UI: Failed reading I2C Angle![0m
+[0;32mI (112470) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (112480) UI: Failed reading I2C Angle![0m
+[1;31mE (112580) UI: Failed reading I2C Angle![0m
+[0;32mI (112670) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (112680) UI: Failed reading I2C Angle![0m
+[1;31mE (112780) UI: Failed reading I2C Angle![0m
+[0;32mI (112870) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (112880) UI: Failed reading I2C Angle![0m
+[1;31mE (112980) UI: Failed reading I2C Angle![0m
+[0;32mI (113070) ENC_MUX: ENC0(ch0): 341.5° (3885)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (113080) UI: Failed reading I2C Angle![0m
+[1;31mE (113180) UI: Failed reading I2C Angle![0m
+[0;32mI (113270) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (113280) UI: Failed reading I2C Angle![0m
+[1;31mE (113380) UI: Failed reading I2C Angle![0m
+[0;32mI (113470) ENC_MUX: ENC0(ch0): 341.6° (3887)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (113480) UI: Failed reading I2C Angle![0m
+[1;31mE (113580) UI: Failed reading I2C Angle![0m
+[0;32mI (113670) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (113680) UI: Failed reading I2C Angle![0m
+[1;31mE (113780) UI: Failed reading I2C Angle![0m
+[0;32mI (113870) ENC_MUX: ENC0(ch0): 352.5° (4011)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (113880) UI: Failed reading I2C Angle![0m
+[1;31mE (113980) UI: Failed reading I2C Angle![0m
+[1;31mE (114070) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (114070) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (114070) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (114070) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (114070) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (114090) UI: Failed reading I2C Angle![0m
+[1;31mE (114190) UI: Failed reading I2C Angle![0m
+[1;31mE (114280) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (114280) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (114280) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (114280) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (114280) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (114300) UI: Failed reading I2C Angle![0m
+[1;31mE (114400) UI: Failed reading I2C Angle![0m
+[0;32mI (114490) ENC_MUX: ENC0(ch0): 344.2° (3916)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (114500) UI: Failed reading I2C Angle![0m
+[1;31mE (114600) UI: Failed reading I2C Angle![0m
+[0;32mI (114690) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (114700) UI: Failed reading I2C Angle![0m
+[1;31mE (114800) UI: Failed reading I2C Angle![0m
+[0;32mI (114890) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (114900) UI: Failed reading I2C Angle![0m
+[1;31mE (115000) UI: Failed reading I2C Angle![0m
+[0;32mI (115090) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (115100) UI: Failed reading I2C Angle![0m
+[1;31mE (115200) UI: Failed reading I2C Angle![0m
+[0;32mI (115290) ENC_MUX: ENC0(ch0): 334.7° (3808)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (115300) UI: Failed reading I2C Angle![0m
+[1;31mE (115400) UI: Failed reading I2C Angle![0m
+[0;32mI (115490) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (115500) UI: Failed reading I2C Angle![0m
+[1;31mE (115600) UI: Failed reading I2C Angle![0m
+[0;32mI (115690) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (115700) UI: Failed reading I2C Angle![0m
+[1;31mE (115800) UI: Failed reading I2C Angle![0m
+[0;32mI (115890) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (115900) UI: Failed reading I2C Angle![0m
+[1;31mE (116000) UI: Failed reading I2C Angle![0m
+[0;32mI (116090) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (116100) UI: Failed reading I2C Angle![0m
+[1;31mE (116200) UI: Failed reading I2C Angle![0m
+[0;32mI (116290) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (116300) UI: Failed reading I2C Angle![0m
+[1;31mE (116400) UI: Failed reading I2C Angle![0m
+[0;32mI (116490) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (116500) UI: Failed reading I2C Angle![0m
+[1;31mE (116600) UI: Failed reading I2C Angle![0m
+[0;32mI (116690) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (116700) UI: Failed reading I2C Angle![0m
+[1;31mE (116800) UI: Failed reading I2C Angle![0m
+[1;31mE (116890) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (116890) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (116890) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (116890) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (116890) ENC_MUX: ENC0(ch0): ERR 0.0° (0)  |  ENC1(ch1): ERR 0.0° (0)  |  ENC2(ch6): ERR 0.0° (0)  |  ENC3(ch7): ERR 0.0° (0)[0m
+[1;31mE (116910) UI: Failed reading I2C Angle![0m
+[1;31mE (117010) UI: Failed reading I2C Angle![0m
+[0;32mI (117100) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (117110) UI: Failed reading I2C Angle![0m
+[1;31mE (117210) UI: Failed reading I2C Angle![0m
+[0;32mI (117300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (117310) UI: Failed reading I2C Angle![0m
+[1;31mE (117410) UI: Failed reading I2C Angle![0m
+[0;32mI (117500) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (117510) UI: Failed reading I2C Angle![0m
+[1;31mE (117610) UI: Failed reading I2C Angle![0m
+[0;32mI (117700) ENC_MUX: ENC0(ch0): 335.2° (3814)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (117710) UI: Failed reading I2C Angle![0m
+[1;31mE (117810) UI: Failed reading I2C Angle![0m
+[0;32mI (117900) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (117910) UI: Failed reading I2C Angle![0m
+[1;31mE (118010) UI: Failed reading I2C Angle![0m
+[0;32mI (118100) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (118110) UI: Failed reading I2C Angle![0m
+[1;31mE (118210) UI: Failed reading I2C Angle![0m
+[0;32mI (118300) ENC_MUX: ENC0(ch0): 351.1° (3995)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (118310) UI: Failed reading I2C Angle![0m
+[1;31mE (118410) UI: Failed reading I2C Angle![0m
+[0;32mI (118500) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (118510) UI: Failed reading I2C Angle![0m
+[1;31mE (118610) UI: Failed reading I2C Angle![0m
+[0;32mI (118700) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (118710) UI: Failed reading I2C Angle![0m
+[1;31mE (118810) UI: Failed reading I2C Angle![0m
+[0;32mI (118900) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (118910) UI: Failed reading I2C Angle![0m
+[1;31mE (119010) UI: Failed reading I2C Angle![0m
+[0;32mI (119100) ENC_MUX: ENC0(ch0): 340.4° (3873)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (119110) UI: Failed reading I2C Angle![0m
+[1;31mE (119210) UI: Failed reading I2C Angle![0m
+[0;32mI (119300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (119310) UI: Failed reading I2C Angle![0m
+[1;31mE (119410) UI: Failed reading I2C Angle![0m
+[0;32mI (119500) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (119510) UI: Failed reading I2C Angle![0m
+[1;31mE (119610) UI: Failed reading I2C Angle![0m
+[0;32mI (119700) ENC_MUX: ENC0(ch0): 314.9° (3583)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (119710) UI: Failed reading I2C Angle![0m
+[1;31mE (119810) UI: Failed reading I2C Angle![0m
+[0;32mI (119900) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.7° (235)[0m
+[1;31mE (119910) UI: Failed reading I2C Angle![0m
+[1;31mE (120010) UI: Failed reading I2C Angle![0m
+[0;32mI (120100) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (120110) UI: Failed reading I2C Angle![0m
+[1;31mE (120210) UI: Failed reading I2C Angle![0m
+[0;32mI (120300) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (120310) UI: Failed reading I2C Angle![0m
+[1;31mE (120410) UI: Failed reading I2C Angle![0m
+[0;32mI (120500) ENC_MUX: ENC0(ch0): 341.0° (3880)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 2.2° (25)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (120510) UI: Failed reading I2C Angle![0m
+[1;31mE (120610) UI: Failed reading I2C Angle![0m
+[0;32mI (120700) ENC_MUX: ENC0(ch0): 331.6° (3773)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (120710) UI: Failed reading I2C Angle![0m
+[1;31mE (120810) UI: Failed reading I2C Angle![0m
+[0;32mI (120900) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (120910) UI: Failed reading I2C Angle![0m
+[1;31mE (121010) UI: Failed reading I2C Angle![0m
+[0;32mI (121100) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (121110) UI: Failed reading I2C Angle![0m
+[1;31mE (121210) UI: Failed reading I2C Angle![0m
+[0;32mI (121300) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (121310) UI: Failed reading I2C Angle![0m
+[1;31mE (121410) UI: Failed reading I2C Angle![0m
+[0;32mI (121500) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (121510) UI: Failed reading I2C Angle![0m
+[1;31mE (121610) UI: Failed reading I2C Angle![0m
+[0;32mI (121700) ENC_MUX: ENC0(ch0): 334.2° (3802)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (121710) UI: Failed reading I2C Angle![0m
+[1;31mE (121810) UI: Failed reading I2C Angle![0m
+[0;32mI (121900) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (121910) UI: Failed reading I2C Angle![0m
+[1;31mE (122010) UI: Failed reading I2C Angle![0m
+[0;32mI (122100) ENC_MUX: ENC0(ch0): 331.5° (3772)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (122110) UI: Failed reading I2C Angle![0m
+[1;31mE (122210) UI: Failed reading I2C Angle![0m
+[0;32mI (122300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (122310) UI: Failed reading I2C Angle![0m
+[1;31mE (122410) UI: Failed reading I2C Angle![0m
+[0;32mI (122500) ENC_MUX: ENC0(ch0): 344.1° (3915)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (122510) UI: Failed reading I2C Angle![0m
+[1;31mE (122610) UI: Failed reading I2C Angle![0m
+[0;32mI (122700) ENC_MUX: ENC0(ch0): 324.1° (3688)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (122710) UI: Failed reading I2C Angle![0m
+[1;31mE (122810) UI: Failed reading I2C Angle![0m
+[0;32mI (122900) ENC_MUX: ENC0(ch0): 324.2° (3689)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 17.8° (203)[0m
+[1;31mE (122910) UI: Failed reading I2C Angle![0m
+[1;31mE (123010) UI: Failed reading I2C Angle![0m
+[0;32mI (123100) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (123110) UI: Failed reading I2C Angle![0m
+[1;31mE (123210) UI: Failed reading I2C Angle![0m
+[0;32mI (123300) ENC_MUX: ENC0(ch0): 343.8° (3912)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (123310) UI: Failed reading I2C Angle![0m
+[1;31mE (123410) UI: Failed reading I2C Angle![0m
+[0;32mI (123500) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (123510) UI: Failed reading I2C Angle![0m
+[1;31mE (123610) UI: Failed reading I2C Angle![0m
+[0;32mI (123700) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (123710) UI: Failed reading I2C Angle![0m
+[1;31mE (123810) UI: Failed reading I2C Angle![0m
+[0;32mI (123900) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (123910) UI: Failed reading I2C Angle![0m
+[1;31mE (124010) UI: Failed reading I2C Angle![0m
+[0;32mI (124100) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 20.2° (230)[0m
+[1;31mE (124110) UI: Failed reading I2C Angle![0m
+[1;31mE (124210) UI: Failed reading I2C Angle![0m
+[0;32mI (124300) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (124310) UI: Failed reading I2C Angle![0m
+[1;31mE (124410) UI: Failed reading I2C Angle![0m
+[0;32mI (124500) ENC_MUX: ENC0(ch0): 350.7° (3990)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (124510) UI: Failed reading I2C Angle![0m
+[1;31mE (124610) UI: Failed reading I2C Angle![0m
+[0;32mI (124700) ENC_MUX: ENC0(ch0): 333.2° (3791)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (124710) UI: Failed reading I2C Angle![0m
+[1;31mE (124810) UI: Failed reading I2C Angle![0m
+[0;32mI (124900) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (124910) UI: Failed reading I2C Angle![0m
+[1;31mE (125010) UI: Failed reading I2C Angle![0m
+[0;32mI (125100) ENC_MUX: ENC0(ch0): 352.0° (4005)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (125110) UI: Failed reading I2C Angle![0m
+[1;31mE (125210) UI: Failed reading I2C Angle![0m
+[0;32mI (125300) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (125310) UI: Failed reading I2C Angle![0m
+[1;31mE (125410) UI: Failed reading I2C Angle![0m
+[0;32mI (125500) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (125510) UI: Failed reading I2C Angle![0m
+[1;31mE (125610) UI: Failed reading I2C Angle![0m
+[0;32mI (125700) ENC_MUX: ENC0(ch0): 334.2° (3802)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (125710) UI: Failed reading I2C Angle![0m
+[1;31mE (125810) UI: Failed reading I2C Angle![0m
+[0;32mI (125900) ENC_MUX: ENC0(ch0): 334.2° (3802)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (125910) UI: Failed reading I2C Angle![0m
+[1;31mE (126010) UI: Failed reading I2C Angle![0m
+[0;32mI (126100) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (126110) UI: Failed reading I2C Angle![0m
+[1;31mE (126210) UI: Failed reading I2C Angle![0m
+[0;32mI (126300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (126310) UI: Failed reading I2C Angle![0m
+[1;31mE (126410) UI: Failed reading I2C Angle![0m
+[0;32mI (126500) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.0° (102)[0m
+[1;31mE (126510) UI: Failed reading I2C Angle![0m
+[1;31mE (126610) UI: Failed reading I2C Angle![0m
+[0;32mI (126700) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (126710) UI: Failed reading I2C Angle![0m
+[1;31mE (126810) UI: Failed reading I2C Angle![0m
+[0;32mI (126900) ENC_MUX: ENC0(ch0): 341.1° (3881)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (126910) UI: Failed reading I2C Angle![0m
+[1;31mE (127010) UI: Failed reading I2C Angle![0m
+[0;32mI (127100) ENC_MUX: ENC0(ch0): 334.2° (3802)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (127110) UI: Failed reading I2C Angle![0m
+[1;31mE (127210) UI: Failed reading I2C Angle![0m
+[0;32mI (127300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (127310) UI: Failed reading I2C Angle![0m
+[1;31mE (127410) UI: Failed reading I2C Angle![0m
+[0;32mI (127500) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (127510) UI: Failed reading I2C Angle![0m
+[1;31mE (127610) UI: Failed reading I2C Angle![0m
+[0;32mI (127700) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (127710) UI: Failed reading I2C Angle![0m
+[1;31mE (127810) UI: Failed reading I2C Angle![0m
+[0;32mI (127900) ENC_MUX: ENC0(ch0): 333.2° (3791)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (127910) UI: Failed reading I2C Angle![0m
+[1;31mE (128010) UI: Failed reading I2C Angle![0m
+[0;32mI (128100) ENC_MUX: ENC0(ch0): 349.9° (3981)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (128110) UI: Failed reading I2C Angle![0m
+[1;31mE (128210) UI: Failed reading I2C Angle![0m
+[0;32mI (128300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (128310) UI: Failed reading I2C Angle![0m
+[1;31mE (128410) UI: Failed reading I2C Angle![0m
+[0;32mI (128500) ENC_MUX: ENC0(ch0): 340.4° (3873)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 24.8° (282)[0m
+[1;31mE (128510) UI: Failed reading I2C Angle![0m
+[1;31mE (128610) UI: Failed reading I2C Angle![0m
+[0;32mI (128700) ENC_MUX: ENC0(ch0): 340.8° (3877)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (128710) UI: Failed reading I2C Angle![0m
+[1;31mE (128810) UI: Failed reading I2C Angle![0m
+[0;32mI (128900) ENC_MUX: ENC0(ch0): 320.6° (3648)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (128910) UI: Failed reading I2C Angle![0m
+[1;31mE (129010) UI: Failed reading I2C Angle![0m
+[0;32mI (129100) ENC_MUX: ENC0(ch0): 326.4° (3714)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (129110) UI: Failed reading I2C Angle![0m
+[1;31mE (129210) UI: Failed reading I2C Angle![0m
+[0;32mI (129300) ENC_MUX: ENC0(ch0): 340.0° (3868)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (129310) UI: Failed reading I2C Angle![0m
+[1;31mE (129410) UI: Failed reading I2C Angle![0m
+[0;32mI (129500) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (129510) UI: Failed reading I2C Angle![0m
+[1;31mE (129610) UI: Failed reading I2C Angle![0m
+[0;32mI (129700) ENC_MUX: ENC0(ch0): 333.5° (3795)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (129710) UI: Failed reading I2C Angle![0m
+[1;31mE (129810) UI: Failed reading I2C Angle![0m
+[0;32mI (129900) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (129910) UI: Failed reading I2C Angle![0m
+[1;31mE (130010) UI: Failed reading I2C Angle![0m
+[0;32mI (130100) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (130110) UI: Failed reading I2C Angle![0m
+[1;31mE (130210) UI: Failed reading I2C Angle![0m
+[0;32mI (130300) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (130310) UI: Failed reading I2C Angle![0m
+[1;31mE (130410) UI: Failed reading I2C Angle![0m
+[0;32mI (130500) ENC_MUX: ENC0(ch0): 334.7° (3808)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (130510) UI: Failed reading I2C Angle![0m
+[1;31mE (130610) UI: Failed reading I2C Angle![0m
+[0;32mI (130700) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (130710) UI: Failed reading I2C Angle![0m
+[1;31mE (130810) UI: Failed reading I2C Angle![0m
+[0;32mI (130900) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.5° (222)[0m
+[1;31mE (130910) UI: Failed reading I2C Angle![0m
+[1;31mE (131010) UI: Failed reading I2C Angle![0m
+[0;32mI (131100) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.1° (217)[0m
+[1;31mE (131110) UI: Failed reading I2C Angle![0m
+[1;31mE (131210) UI: Failed reading I2C Angle![0m
+[0;32mI (131300) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (131310) UI: Failed reading I2C Angle![0m
+[1;31mE (131410) UI: Failed reading I2C Angle![0m
+[0;32mI (131500) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (131510) UI: Failed reading I2C Angle![0m
+[1;31mE (131610) UI: Failed reading I2C Angle![0m
+[0;32mI (131700) ENC_MUX: ENC0(ch0): 323.8° (3684)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (131710) UI: Failed reading I2C Angle![0m
+[1;31mE (131810) UI: Failed reading I2C Angle![0m
+[0;32mI (131900) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (131910) UI: Failed reading I2C Angle![0m
+[1;31mE (132010) UI: Failed reading I2C Angle![0m
+[0;32mI (132100) ENC_MUX: ENC0(ch0): 349.5° (3976)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 8.4° (96)[0m
+[1;31mE (132110) UI: Failed reading I2C Angle![0m
+[1;31mE (132210) UI: Failed reading I2C Angle![0m
+[0;32mI (132300) ENC_MUX: ENC0(ch0): 343.1° (3904)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (132310) UI: Failed reading I2C Angle![0m
+[1;31mE (132410) UI: Failed reading I2C Angle![0m
+[0;32mI (132500) ENC_MUX: ENC0(ch0): 340.5° (3874)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (132510) UI: Failed reading I2C Angle![0m
+[1;31mE (132610) UI: Failed reading I2C Angle![0m
+[0;32mI (132700) ENC_MUX: ENC0(ch0): 330.7° (3763)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (132710) UI: Failed reading I2C Angle![0m
+[1;31mE (132810) UI: Failed reading I2C Angle![0m
+[0;32mI (132900) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (132910) UI: Failed reading I2C Angle![0m
+[1;31mE (133010) UI: Failed reading I2C Angle![0m
+[0;32mI (133100) ENC_MUX: ENC0(ch0): 342.6° (3898)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (133110) UI: Failed reading I2C Angle![0m
+[1;31mE (133210) UI: Failed reading I2C Angle![0m
+[0;32mI (133300) ENC_MUX: ENC0(ch0): 342.2° (3894)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (133310) UI: Failed reading I2C Angle![0m
+[1;31mE (133410) UI: Failed reading I2C Angle![0m
+[0;32mI (133500) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (133510) UI: Failed reading I2C Angle![0m
+[1;31mE (133610) UI: Failed reading I2C Angle![0m
+[0;32mI (133700) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 18.3° (208)[0m
+[1;31mE (133710) UI: Failed reading I2C Angle![0m
+[1;31mE (133810) UI: Failed reading I2C Angle![0m
+[0;32mI (133900) ENC_MUX: ENC0(ch0): 332.5° (3783)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (133910) UI: Failed reading I2C Angle![0m
+[1;31mE (134010) UI: Failed reading I2C Angle![0m
+[0;32mI (134100) ENC_MUX: ENC0(ch0): 333.0° (3789)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.9° (113)[0m
+[1;31mE (134110) UI: Failed reading I2C Angle![0m
+[1;31mE (134210) UI: Failed reading I2C Angle![0m
+[0;32mI (134300) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 9.4° (107)[0m
+[1;31mE (134310) UI: Failed reading I2C Angle![0m
+[1;31mE (134410) UI: Failed reading I2C Angle![0m
+[0;32mI (134500) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 19.1° (217)[0m
+[1;31mE (134510) UI: Failed reading I2C Angle![0m
+[1;31mE (134610) UI: Failed reading I2C Angle![0m
+[0;32mI (134700) ENC_MUX: ENC0(ch0): 352.1° (4006)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.5° (120)[0m
+[1;31mE (134710) UI: Failed reading I2C Angle![0m
+[1;31mE (134810) UI: Failed reading I2C Angle![0m
+[0;32mI (134900) ENC_MUX: ENC0(ch0): 342.2° (3893)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 359.2° (4087)[0m
+[1;31mE (134910) UI: Failed reading I2C Angle![0m
+[1;31mE (135010) UI: Failed reading I2C Angle![0m
+[0;32mI (135100) ENC_MUX: ENC0(ch0): 332.5° (3783)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (135110) UI: Failed reading I2C Angle![0m
+[1;31mE (135210) UI: Failed reading I2C Angle![0m
+[0;32mI (135300) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (135310) UI: Failed reading I2C Angle![0m
+[1;31mE (135410) UI: Failed reading I2C Angle![0m
+[0;32mI (135500) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (135510) UI: Failed reading I2C Angle![0m
+[1;31mE (135610) UI: Failed reading I2C Angle![0m
+[0;32mI (135700) ENC_MUX: ENC0(ch0): 351.6° (4000)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (135710) UI: Failed reading I2C Angle![0m
+[1;31mE (135810) UI: Failed reading I2C Angle![0m
+[0;32mI (135900) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (135910) UI: Failed reading I2C Angle![0m
+[1;31mE (136010) UI: Failed reading I2C Angle![0m
+[0;32mI (136100) ENC_MUX: ENC0(ch0): 350.6° (3989)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (136110) UI: Failed reading I2C Angle![0m
+[1;31mE (136210) UI: Failed reading I2C Angle![0m
+[0;32mI (136300) ENC_MUX: ENC0(ch0): 350.1° (3983)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (136310) UI: Failed reading I2C Angle![0m
+[1;31mE (136410) UI: Failed reading I2C Angle![0m
+[0;32mI (136500) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 10.1° (115)[0m
+[1;31mE (136510) UI: Failed reading I2C Angle![0m
+[1;31mE (136610) UI: Failed reading I2C Angle![0m
+[0;32mI (136700) ENC_MUX: ENC0(ch0): 352.0° (4005)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (136710) UI: Failed reading I2C Angle![0m
+[1;31mE (136810) UI: Failed reading I2C Angle![0m
+[0;32mI (136900) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (136910) UI: Failed reading I2C Angle![0m
+[1;31mE (137010) UI: Failed reading I2C Angle![0m
+[0;32mI (137100) ENC_MUX: ENC0(ch0): 351.0° (3994)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (137110) UI: Failed reading I2C Angle![0m
+[1;31mE (137210) UI: Failed reading I2C Angle![0m
+[0;32mI (137300) ENC_MUX: ENC0(ch0): 0.0° (0)  |  ENC1(ch1): 0.0° (0)  |  ENC2(ch6): 0.0° (0)  |  ENC3(ch7): 0.0° (0)[0m
+[1;31mE (137310) UI: Failed reading I2C Angle![0m

@@ -35,4 +35,12 @@ esp_err_t nrf24_init(const uint8_t *address, uint8_t channel, uint8_t payload_si
  */
 esp_err_t nrf24_transmit(const uint8_t *data, uint8_t len);
 
+/**
+ * @brief Check for and read data from the RX FIFO (e.g. ACK payloads).
+ * @param data Buffer to store the received payload
+ * @param max_len Maximum length to read
+ * @return Number of bytes actually received/read. 0 if no data available.
+ */
+uint8_t nrf24_receive(uint8_t *data, uint8_t max_len);
+
 #endif /* NRF24_H */

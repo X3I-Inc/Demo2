@@ -1,0 +1,287 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\emilr\demo2\build\demo2.elf C:\Users\emilr\demo2\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'COM9'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42007f2b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 22 2026 12:22:34[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0dee4h ( 57060) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001df0c vaddr=3fc93e00 size=0210ch (  8460) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1b91ch (112924) map[0m
+[0;32mI (121) esp_image: segment 3: paddr=0003b944 vaddr=3fc95f0c size=01224h (  4644) load[0m
+[0;32mI (123) esp_image: segment 4: paddr=0003cb70 vaddr=40374000 size=0fdb0h ( 64944) load[0m
+[0;32mI (139) esp_image: segment 5: paddr=0004c928 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (146) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (146) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Multicore app[0m
+[0;32mI (165) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (166) cpu_start: Pro cpu start user code[0m
+[0;32mI (166) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     demo2[0m
+[0;32mI (175) app_init: App version:      149042f-dirty[0m
+[0;32mI (180) app_init: Compile time:     Apr 23 2026 23:59:57[0m
+[0;32mI (185) app_init: ELF file SHA256:  a0d6bfc60...[0m
+[0;32mI (189) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC97BB0 len 00051B60 (326 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: gd[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (250) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (260) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (266) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (273) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) IO_CTRL: IO Peripherals initialized (ADC1_CH3, Peltier GPIO5, Servo GPIO7)[0m
+[0;32mI (333) LCD: LCD initialised (4-bit parallel)[0m
+[0;32mI (333) BTN: Buttons initialised (GPIO 48, 47, 40)[0m
+[0;33mW (333) AS5600: AS5600 not responding on I2C bus[0m
+[0;33mW (333) APP: AS5600 init failed – encoder page will show errors[0m
+[0;32mI (433) NRF24: Initial CFG readback: 0x0E (expected 0x08 after power-up)[0m
+[0;32mI (433) NRF24: === NRF24 Config Readback ===[0m
+[0;32mI (433) NRF24: CFG     = 0x0E (expected 0x0E)[0m
+[0;32mI (433) NRF24: EN_AA   = 0x01 (expected 0x01)[0m
+[0;32mI (433) NRF24: EN_RX   = 0x01 (expected 0x01)[0m
+[0;32mI (443) NRF24: SETUP_AW= 0x03 (expected 0x03)[0m
+[0;32mI (443) NRF24: RF_CH   = 76    (expected 76)[0m
+[0;32mI (453) NRF24: RF_SETUP= 0x06 (expected 0x06)[0m
+[0;32mI (453) NRF24: STATUS  = 0x0E[0m
+[0;32mI (453) NRF24: FEATURE = 0x06 (expected 0x06)[0m
+[0;32mI (463) NRF24: DYNPD   = 0x01 (expected 0x01)[0m
+[0;32mI (463) NRF24: RX_PW_P0= 20[0m
+[0;32mI (463) NRF24: =============================[0m
+[0;32mI (473) NRF24: NRF24L01 initialized OK.[0m
+[1;31mE (473) ENC_MUX: PCA9548A mux not responding on any address 0x70-0x77![0m
+[0;32mI (483) ENC_MUX: --- I2C BUS SCAN (SDA: 42, SCL: 41) ---[0m
+[1;31mE (483) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (493) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (493) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (503) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (503) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (513) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (513) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (523) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (523) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (533) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (533) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (543) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (543) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (553) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (563) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (563) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (573) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (573) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (583) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (583) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (593) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (593) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (603) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (603) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (613) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (613) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (623) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (623) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (633) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (643) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (643) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (653) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (653) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (663) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (663) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (673) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (673) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (683) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (683) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (693) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (693) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (703) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (703) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (713) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (713) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (723) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (733) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (733) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (743) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (743) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (753) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (753) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (763) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (763) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (773) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (773) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (783) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (783) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (793) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (793) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (803) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (803) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (813) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (823) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (823) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (833) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (833) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (843) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (843) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (853) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (853) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (863) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (863) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (873) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (873) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (883) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (883) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (893) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (893) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (903) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (913) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (913) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (923) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (923) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (933) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (933) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (943) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (943) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (953) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (953) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (963) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (963) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (973) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (973) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (983) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (983) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (993) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1003) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1003) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1013) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1013) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1023) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1023) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1033) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1033) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1043) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1043) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1053) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1053) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1063) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1063) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1073) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1083) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1083) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1093) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1093) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1103) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1103) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1113) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1113) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1123) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1123) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1133) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1133) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1143) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1153) i2c: i2c_master_write(1327): i2c null address error[0m
+[1;31mE (1153) ENC_MUX: NO I2C DEVICES FOUND! Double-check your SDA(42) / SCL(41) wiring, GND, and 3.3V.[0m
+[0;32mI (1163) NRF_TASK: Telemetry link started.[0m
+[0;32mI (1663) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (2193) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (2363) UI: UI initialised[0m
+[0;32mI (2773) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (3363) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (3903) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (4503) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (5093) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (5633) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (6173) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (6723) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (6893) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (7453) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (8013) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (8593) NRF_TASK: LINK UP -> Pot:  492 | PIC Temp:  19.0 C | PIC P: 4095[0m
+[0;32mI (9173) NRF_TASK: LINK UP -> Pot:  483 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (9743) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (10283) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (10823) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (11403) NRF_TASK: LINK UP -> Pot:  493 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (11983) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (12523) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (12683) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (13213) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (13803) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (14393) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (14963) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (15503) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (16063) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (16623) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (17193) NRF_TASK: LINK UP -> Pot:  493 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (17753) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (18313) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (18473) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (19023) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (19603) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (20183) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (20743) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4019[0m
+[0;32mI (21303) NRF_TASK: LINK UP -> Pot:  490 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (21883) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (22423) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (22993) NRF_TASK: LINK UP -> Pot:  486 | PIC Temp:  18.9 C | PIC P: 4019[0m
+[0;32mI (23553) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4019[0m
+[0;32mI (24093) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (24243) NRF_TASK: LINK UP -> Pot:  484 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (24783) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (25363) NRF_TASK: LINK UP -> Pot:  479 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (25923) NRF_TASK: LINK UP -> Pot:  482 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (26503) NRF_TASK: LINK UP -> Pot:  483 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (27083) NRF_TASK: LINK UP -> Pot: 1203 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (27643) NRF_TASK: LINK UP -> Pot:  493 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (28233) NRF_TASK: LINK UP -> Pot:  493 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (28793) NRF_TASK: LINK UP -> Pot:  492 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (29353) NRF_TASK: LINK UP -> Pot:  493 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (29893) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (30053) NRF_TASK: LINK UP -> Pot:  490 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (30583) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (31163) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (31743) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (32303) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (32903) NRF_TASK: LINK UP -> Pot:  488 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (33513) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (34103) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (34683) NRF_TASK: LINK UP -> Pot:  483 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (35223) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (35783) NRF_TASK: LINK UP -> Pot:  484 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (35943) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (36483) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (37083) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (37653) NRF_TASK: LINK UP -> Pot:  484 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (38273) NRF_TASK: LINK UP -> Pot:  486 | PIC Temp:  18.9 C | PIC P: 4019[0m
+[0;32mI (38803) NRF_TASK: LINK UP -> Pot:  484 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (39403) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (39983) NRF_TASK: LINK UP -> Pot:  485 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (40533) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (41073) NRF_TASK: LINK UP -> Pot:  480 | PIC Temp:  18.9 C | PIC P: 4019[0m
+[0;32mI (41643) NRF_TASK: LINK UP -> Pot:  483 | PIC Temp:  18.9 C | PIC P: 4020[0m
+[0;32mI (41793) NRF_TASK: LINK UP -> Pot:  484 | PIC Temp:  18.9 C | PIC P: 4020[0m

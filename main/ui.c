@@ -47,11 +47,6 @@ static int       setting_refresh_hz  = 10;  /* 5, 10, 20, 50 */
 static int       setting_contrast    = 5;   /* 0–10           */
 static bool      setting_backlight   = true;
 
-/* Encoder variables */
-#define AVG_SAMPLES 16
-static uint16_t  raw_history[AVG_SAMPLES] = {0};
-static uint8_t   hist_idx = 0;
-static bool      hist_filled = false;
 static uint16_t  smoothed_raw = 0;
 static float     smoothed_deg = 0.0f;
 
@@ -166,47 +161,11 @@ static void draw_encoder(void)
 #include "nrf24.h"
 #include "arm_protocol.h"
 
-static uint8_t nrf_seq = 0;
-
 static void handle_encoder(void)
 {
-    /* Update Moving Average */
-    uint16_t raw = 0;
-    if (as5600_read_raw_angle(&raw) == ESP_OK) {
-        raw_history[hist_idx] = raw;
-        hist_idx = (hist_idx + 1) % AVG_SAMPLES;
-        if (hist_idx == 0) hist_filled = true;
+    /* Old direct I2C polling removed. 
+       Encoders are now handled by encoder_mux task. */
 
-        uint32_t sum = 0;
-        int count = hist_filled ? AVG_SAMPLES : hist_idx;
-        if (count > 0) {
-            for (int i = 0; i < count; i++) {
-                sum += raw_history[i];
-            }
-            smoothed_raw = sum / count;
-            smoothed_deg = (float)smoothed_raw * 360.0f / 4096.0f;
-            
-            /* Print to terminal so we can monitor it without looking at the LCD */
-            ESP_LOGI(TAG, "Angle: %6.1f deg | TX NRF...", smoothed_deg);
-
-            /* Transmit over NRF24 - Using strictly formatted arm_motion_packet_t */
-            arm_motion_packet_t pkt;
-            float joints[ARM_MAX_JOINTS] = {0.0f};
-            joints[0] = smoothed_deg;  /* Put encoder value into joint 0 */
-            
-            /* Build the standard 20-byte packet with enabled motor flags */
-            uint8_t pkt_len = arm_build_motion_packet(&pkt, joints, 0, ARM_MOTION_FLAG_ENABLE, nrf_seq++);
-            
-            esp_err_t res = nrf24_transmit((const uint8_t *)&pkt, pkt_len);
-            if (res != ESP_OK) {
-                ESP_LOGW(TAG, "NRF TX Failed");
-            } else {
-                ESP_LOGI(TAG, "NRF TX Success [Seq: %u]", nrf_seq - 1);
-            }
-        }
-    } else {
-        ESP_LOGE(TAG, "Failed reading I2C Angle!");
-    }
     /* SELECT = back to main menu */
     if (button_is_pressed(BTN_SELECT)) {
         wait_release();

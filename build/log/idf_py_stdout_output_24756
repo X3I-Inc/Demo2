@@ -1,0 +1,1003 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\emilr\demo2\build\demo2.elf C:\Users\emilr\demo2\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'COM9'
+[0;32mI (19613) NRF_TASK: LINK UP -> Pot:  507 | PIC Temp:  19.0 C | PESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b9b6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 22 2026 12:22:34[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0dee4h ( 57060) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001df0c vaddr=3fc93e00 size=0210ch (  8460) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1b91ch (112924) map[0m
+[0;32mI (121) esp_image: segment 3: paddr=0003b944 vaddr=3fc95f0c size=01224h (  4644) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=0003cb70 vaddr=40374000 size=0fdb0h ( 64944) load[0m
+[0;32mI (139) esp_image: segment 5: paddr=0004c928 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (146) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (146) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Multicore app[0m
+[0;32mI (165) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (166) cpu_start: Pro cpu start user code[0m
+[0;32mI (166) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     demo2[0m
+[0;32mI (175) app_init: App version:      149042f-dirty[0m
+[0;32mI (180) app_init: Compile time:     Apr 23 2026 23:59:57[0m
+[0;32mI (185) app_init: ELF file SHA256:  a0d6bfc60...[0m
+[0;32mI (189) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC97BB0 len 00051B60 (326 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: gd[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (250) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (260) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (266) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (273) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) IO_CTRL: IO Peripherals initialized (ADC1_CH3, Peltier GPIO5, Servo GPIO7)[0m
+[0;32mI (333) LCD: LCD initialised (4-bit parallel)[0m
+[0;32mI (333) BTN: Buttons initialised (GPIO 48, 47, 40)[0m
+[0;33mW (333) AS5600: AS5600 not responding on I2C bus[0m
+[0;33mW (333) APP: AS5600 init failed – encoder page will show errors[0m
+[0;32mI (433) NRF24: Initial CFG readback: 0x0E (expected 0x08 after power-up)[0m
+[0;32mI (433) NRF24: === NRF24 Config Readback ===[0m
+[0;32mI (433) NRF24: CFG     = 0x0E (expected 0x0E)[0m
+[0;32mI (433) NRF24: EN_AA   = 0x01 (expected 0x01)[0m
+[0;32mI (433) NRF24: EN_RX   = 0x01 (expected 0x01)[0m
+[0;32mI (443) NRF24: SETUP_AW= 0x03 (expected 0x03)[0m
+[0;32mI (443) NRF24: RF_CH   = 76    (expected 76)[0m
+[0;32mI (453) NRF24: RF_SETUP= 0x06 (expected 0x06)[0m
+[0;32mI (453) NRF24: STATUS  = 0x0E[0m
+[0;32mI (453) NRF24: FEATURE = 0x06 (expected 0x06)[0m
+[0;32mI (463) NRF24: DYNPD   = 0x01 (expected 0x01)[0m
+[0;32mI (463) NRF24: RX_PW_P0= 20[0m
+[0;32mI (463) NRF24: =============================[0m
+[0;32mI (473) NRF24: NRF24L01 initialized OK.[0m
+[0;32mI (473) ENC_MUX: PCA9548A mux found at 0x70 !![0m
+[0;32mI (473) ENC_MUX: Starting encoder task...[0m
+[0;32mI (483) NRF_TASK: Telemetry link started.[0m
+[0;32mI (973) NRF_TASK: LINK UP -> Pot:  500 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (983) ENC_MUX: Encoder mux task started – reading 4 encoders on channels 0,1,6,7[0m
+[0;32mI (983) ENC_MUX: ENC0: 349.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (993) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1003) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1013) ENC_MUX: ENC0: 344.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1023) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1033) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1053) ENC_MUX: ENC0: 331.3 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1063) ENC_MUX: ENC0: 342.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1073) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1083) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1093) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (1103) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1113) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1123) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1133) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (1143) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1153) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1163) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1173) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1183) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1193) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1203) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1213) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1223) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1233) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1243) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1253) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1263) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1273) ENC_MUX: ENC0: 352.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1283) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1293) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1303) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1313) ENC_MUX: ENC0: 333.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.9 deg[0m
+[0;32mI (1323) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1333) ENC_MUX: ENC0: 340.8 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1343) ENC_MUX: ENC0: 340.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1353) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1363) ENC_MUX: ENC0: 332.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1373) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1383) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (1393) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1403) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1413) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1423) ENC_MUX: ENC0: 325.3 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1433) ENC_MUX: ENC0: 332.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1443) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1453) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1463) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1473) NRF_TASK: LINK UP -> Pot:  495 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (1473) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1483) ENC_MUX: ENC0: 324.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1493) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1503) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1513) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1523) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1533) ENC_MUX: ENC0: 325.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1543) ENC_MUX: ENC0: 340.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1553) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1563) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1573) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1583) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1593) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1603) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1613) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1623) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1633) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1643) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1653) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1663) ENC_MUX: ENC0: 330.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1673) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1683) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1693) UI: UI initialised[0m
+[0;32mI (1693) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1703) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1713) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1723) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1733) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1743) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  19.5 deg[0m
+[0;32mI (1753) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1763) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1773) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1783) ENC_MUX: ENC0: 344.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1793) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1803) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1813) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1823) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1833) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1843) ENC_MUX: ENC0: 343.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1853) ENC_MUX: ENC0: 330.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 348.8 deg[0m
+[0;32mI (1863) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (1873) ENC_MUX: ENC0: 333.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 349.5 deg[0m
+[0;32mI (1883) ENC_MUX: ENC0: 340.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1893) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1903) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1913) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1923) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.6 deg[0m
+[0;32mI (1933) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1943) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 357.7 deg[0m
+[0;32mI (1953) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1963) ENC_MUX: ENC0: 339.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1973) NRF_TASK: LINK UP -> Pot:  495 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (1973) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   2.8 deg | ENC3:   0.0 deg[0m
+[0;32mI (1983) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (1993) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2003) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2013) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2023) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2033) ENC_MUX: ENC0: 332.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2053) ENC_MUX: ENC0: 323.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2063) ENC_MUX: ENC0: 342.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2073) ENC_MUX: ENC0: 322.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2083) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2093) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2103) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2113) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2123) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2133) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2143) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.3 deg[0m
+[0;32mI (2153) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2163) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2173) ENC_MUX: ENC0: 332.4 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2183) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2193) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2203) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2213) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2223) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2233) ENC_MUX: ENC0: 334.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2243) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2253) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (2263) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2273) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2283) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2293) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2303) ENC_MUX: ENC0: 331.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2313) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2323) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   7.9 deg[0m
+[0;32mI (2333) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2343) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2353) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (2363) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2373) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2383) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2393) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2403) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2413) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.4 deg[0m
+[0;32mI (2423) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2433) ENC_MUX: ENC0: 342.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2443) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2453) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2463) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (2473) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4019[0m
+[0;32mI (2473) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2483) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (2493) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2503) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2513) ENC_MUX: ENC0: 332.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2523) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2533) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2543) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2553) ENC_MUX: ENC0: 342.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (2563) ENC_MUX: ENC0: 331.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2573) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2583) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2593) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2603) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2613) ENC_MUX: ENC0: 350.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2623) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2633) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2643) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2653) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2663) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2673) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2683) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2693) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2703) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2713) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2723) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2733) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2743) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2753) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2763) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2773) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2783) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2793) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2803) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2813) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2823) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2833) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (2843) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2853) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (2863) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (2873) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2883) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2893) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2903) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2913) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2923) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2933) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2943) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2953) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2963) ENC_MUX: ENC0: 335.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2973) NRF_TASK: LINK UP -> Pot:  494 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (2973) ENC_MUX: ENC0: 332.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2983) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (2993) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3003) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3013) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3023) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3033) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (3053) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3063) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3073) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3083) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3093) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (3103) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3113) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3123) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3133) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3143) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3153) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3163) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3173) ENC_MUX: ENC0: 350.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3183) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3193) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  20.7 deg[0m
+[0;32mI (3203) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3213) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3223) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3233) ENC_MUX: ENC0: 352.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3243) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3253) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3263) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3273) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3283) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3293) ENC_MUX: ENC0: 312.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3303) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3313) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3323) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3333) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3343) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3353) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3363) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3373) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3383) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3393) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3403) ENC_MUX: ENC0: 352.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3413) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3423) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3433) ENC_MUX: ENC0: 334.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3443) ENC_MUX: ENC0: 352.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3453) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3463) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3473) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (3473) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3483) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3493) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3503) ENC_MUX: ENC0: 340.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3513) ENC_MUX: ENC0: 352.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3523) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3533) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3543) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3553) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3563) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3573) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3583) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3593) ENC_MUX: ENC0: 343.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3603) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3613) ENC_MUX: ENC0: 341.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3623) ENC_MUX: ENC0: 332.8 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3633) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3643) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3653) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3663) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3673) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3683) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3693) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3703) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (3713) ENC_MUX: ENC0: 339.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3723) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3733) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3743) ENC_MUX: ENC0: 353.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3753) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3763) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3773) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3783) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3793) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3803) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (3813) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3823) ENC_MUX: ENC0: 332.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3833) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3843) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3853) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3863) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3873) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3883) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3893) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3903) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3913) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3923) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3933) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3943) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3953) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3963) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3973) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4021[0m
+[0;32mI (3973) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3983) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (3993) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (4003) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.9 deg[0m
+[0;32mI (4013) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (4023) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4033) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4053) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4063) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4073) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4083) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4093) ENC_MUX: ENC0: 342.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4103) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4113) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4123) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 350.1 deg[0m
+[0;32mI (4133) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4143) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4153) ENC_MUX: ENC0: 349.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 348.8 deg[0m
+[0;32mI (4163) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4173) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4183) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.4 deg[0m
+[0;32mI (4193) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4203) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4213) ENC_MUX: ENC0: 352.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4223) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4233) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4243) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4253) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4263) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4273) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4283) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4293) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4303) ENC_MUX: ENC0: 343.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4313) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4323) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4333) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4343) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4353) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4363) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4373) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4383) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4393) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4403) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4413) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4423) ENC_MUX: ENC0: 324.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4433) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4443) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4453) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4463) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (4473) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (4473) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4483) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4493) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4503) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4513) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4523) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4533) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4543) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 348.8 deg[0m
+[0;32mI (4553) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4563) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4573) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4583) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4593) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4603) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4613) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4623) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4633) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (4643) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4653) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4663) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4673) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4683) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4693) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4703) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4713) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4723) ENC_MUX: ENC0: 344.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4733) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4743) ENC_MUX: ENC0: 352.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (4753) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4763) ENC_MUX: ENC0: 334.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4773) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4783) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4793) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4803) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4813) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4823) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4833) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4843) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (4853) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4863) ENC_MUX: ENC0: 323.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4873) ENC_MUX: ENC0: 323.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4883) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4893) ENC_MUX: ENC0: 343.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4903) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  18.5 deg[0m
+[0;32mI (4913) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4923) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4933) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4943) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4953) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4963) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4973) NRF_TASK: LINK UP -> Pot:  492 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (4973) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4983) ENC_MUX: ENC0: 341.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (4993) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5003) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5013) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5023) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5033) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5053) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5063) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5073) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5083) ENC_MUX: ENC0: 340.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5093) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5103) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5113) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5123) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5133) ENC_MUX: ENC0: 352.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5143) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5153) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5163) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5173) ENC_MUX: ENC0: 352.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5183) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5193) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (5203) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5213) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5223) ENC_MUX: ENC0: 341.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5233) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5243) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5253) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5263) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (5273) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5283) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5293) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5303) ENC_MUX: ENC0: 322.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5313) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (5323) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5333) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5343) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5353) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5363) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  19.1 deg[0m
+[0;32mI (5373) ENC_MUX: ENC0: 342.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5383) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5393) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5403) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5413) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5423) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5433) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5443) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5453) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5463) ENC_MUX: ENC0: 343.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5473) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (5473) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5483) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5493) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5503) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5513) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5523) ENC_MUX: ENC0: 339.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5533) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.5 deg[0m
+[0;32mI (5543) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5553) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5563) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5573) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5583) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5593) NRF_TASK: LINK UP -> Pot:  491 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (5593) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5603) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.9 deg[0m
+[0;32mI (5613) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5623) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5633) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5643) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.4 deg[0m
+[0;32mI (5653) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5663) ENC_MUX: ENC0: 351.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5673) ENC_MUX: ENC0: 332.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5683) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5693) ENC_MUX: ENC0: 341.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5703) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5713) ENC_MUX: ENC0: 340.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5723) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5733) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5743) ENC_MUX: ENC0: 340.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5753) ENC_MUX: ENC0: 342.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5763) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5773) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5783) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5793) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5803) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5813) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   8.4 deg[0m
+[0;32mI (5823) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5833) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5843) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5853) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5863) ENC_MUX: ENC0: 349.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5873) ENC_MUX: ENC0: 330.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5883) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5893) ENC_MUX: ENC0: 321.4 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5903) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5913) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5923) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5933) ENC_MUX: ENC0: 350.4 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5943) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5953) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5963) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (5973) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5983) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (5993) ENC_MUX: ENC0: 341.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6003) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6013) ENC_MUX: ENC0: 332.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6023) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6033) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6043) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 348.8 deg[0m
+[0;32mI (6053) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6063) ENC_MUX: ENC0: 332.7 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6073) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6083) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6093) NRF_TASK: LINK UP -> Pot:  489 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (6093) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.0 deg[0m
+[0;32mI (6103) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6113) ENC_MUX: ENC0: 351.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  20.0 deg[0m
+[0;32mI (6123) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6133) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6143) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6153) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6163) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6173) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6183) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6193) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6203) ENC_MUX: ENC0: 342.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6213) ENC_MUX: ENC0: 343.7 deg | ENC1:   3.2 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6223) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6233) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6243) ENC_MUX: ENC0: 350.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3: 348.8 deg[0m
+[0;32mI (6253) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   9.4 deg[0m
+[0;32mI (6263) ENC_MUX: ENC0: 321.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6273) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (6283) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6293) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6303) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6313) ENC_MUX: ENC0: 333.6 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (6323) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[1;31mE (6333) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6333) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6333) ENC_MUX: ENC0: 350.7 deg | ENC1:   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6353) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6353) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6353) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6353) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6363) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6383) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6383) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6383) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6383) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6383) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6403) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6403) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6403) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6413) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6413) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[0;32mI (6433) ENC_MUX: ENC0: 341.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6443) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6453) ENC_MUX: ENC0: 350.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6463) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6473) ENC_MUX: ENC0: 342.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6483) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6493) ENC_MUX: ENC0: 331.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (6503) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (6513) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6523) ENC_MUX: ENC0: 352.5 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6533) ENC_MUX: ENC0: 352.1 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6543) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.3 deg[0m
+[0;32mI (6553) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6563) ENC_MUX: ENC0: 351.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6573) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:  10.1 deg[0m
+[0;32mI (6583) ENC_MUX: ENC0: 342.2 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6593) NRF_TASK: LINK UP -> Pot:  490 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (6593) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6603) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6613) ENC_MUX: ENC0: 349.9 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[0;32mI (6623) ENC_MUX: ENC0:   0.0 deg | ENC1:   0.0 deg | ENC2:   0.0 deg | ENC3:   0.0 deg[0m
+[1;31mE (6633) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6633) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6633) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6633) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6643) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6663) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6663) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6663) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6663) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6673) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6683) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6683) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6683) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6693) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6693) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6713) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6713) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6713) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6713) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6723) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6743) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6743) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6743) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6743) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6753) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6763) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6763) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6763) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6773) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6773) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6793) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6793) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6793) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6793) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6803) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6823) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6823) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6823) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6823) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6833) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6853) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6853) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6853) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6853) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6863) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6883) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6883) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6883) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6883) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6883) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6903) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6903) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6903) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6913) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6913) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6933) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6933) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6933) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6933) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6943) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6963) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6963) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6963) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6963) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6963) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (6983) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (6983) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (6983) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (6993) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (6993) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7013) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7013) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7013) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7013) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7023) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7043) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7043) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7043) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7043) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7043) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7063) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7063) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7063) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7073) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7073) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[0;32mI (7093) NRF_TASK: LINK UP -> Pot:  488 | PIC Temp:  19.0 C | PIC P: 4021[0m
+[1;31mE (7093) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7093) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7103) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7103) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7113) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7123) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7123) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7123) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7133) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7133) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7153) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7153) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7153) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7153) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7163) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7183) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7183) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7183) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7183) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7193) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7203) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7203) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7203) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7213) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7213) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7233) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7233) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7233) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7233) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7243) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7263) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7263) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7263) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7263) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7273) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7293) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7293) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7293) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7293) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7303) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7323) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7323) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7323) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7323) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7323) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7343) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7343) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7343) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7353) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7353) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7373) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7373) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7373) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7373) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7383) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7403) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7403) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7403) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7403) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7403) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7423) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7423) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7423) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7433) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7433) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7453) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7453) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7453) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7453) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7463) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7483) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7483) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7483) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7483) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7483) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7503) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7503) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7503) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7513) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7513) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7533) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7533) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7533) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7533) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7543) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7563) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7563) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7563) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7563) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7573) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7583) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7583) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7583) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[0;32mI (7593) NRF_TASK: LINK UP -> Pot:  488 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[1;31mE (7593) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7603) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7623) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7623) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7623) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7623) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7633) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7643) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7643) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7643) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7653) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7653) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7673) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7673) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7673) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7673) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7683) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7703) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7703) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7703) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7703) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7713) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7733) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7733) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7733) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7733) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7743) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7763) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7763) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7763) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7763) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7763) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7783) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7783) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7783) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7793) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7793) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7813) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7813) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7813) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7813) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7823) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7843) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7843) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7843) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7843) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7843) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7863) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7863) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7863) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7873) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7873) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7893) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7893) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7893) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7893) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7903) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7923) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7923) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7923) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7923) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7923) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7943) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7943) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7943) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7953) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7953) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (7973) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (7973) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (7973) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (7973) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (7983) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8003) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8003) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8003) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8003) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8013) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8023) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8023) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8023) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8033) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8033) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8053) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8053) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8053) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8053) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8063) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8083) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8083) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8083) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8083) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8093) NRF_TASK: LINK UP -> Pot:  487 | PIC Temp:  19.0 C | PIC P: 4020[0m
+[0;32mI (8093) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8113) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8113) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8113) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8113) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8123) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8143) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8143) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8143) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8143) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8153) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8173) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8173) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8173) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8173) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8183) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8203) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8203) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8203) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8203) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8203) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8223) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8223) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8223) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8233) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8233) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8253) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8253) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8253) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8253) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8263) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8283) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8283) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8283) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8283) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8283) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8303) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8303) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8303) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8313) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8313) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8333) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8333) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8333) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8333) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8343) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8363) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8363) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8363) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8363) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8363) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8383) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8383) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8383) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8393) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8393) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m
+[1;31mE (8413) ENC_MUX: Mux select ch0 failed: ESP_FAIL[0m
+[1;31mE (8413) ENC_MUX: Mux select ch1 failed: ESP_FAIL[0m
+[1;31mE (8413) ENC_MUX: Mux select ch6 failed: ESP_FAIL[0m
+[1;31mE (8413) ENC_MUX: Mux select ch7 failed: ESP_FAIL[0m
+[0;32mI (8423) ENC_MUX: ENC0: ERR   0.0 deg | ENC1: ERR   0.0 deg | ENC2: ERR   0.0 deg | ENC3: ERR   0.0 deg[0m

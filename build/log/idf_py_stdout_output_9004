@@ -1,0 +1,544 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\emilr\demo2\build\demo2.elf C:\Users\emilr\demo2\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'COM9'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b7b2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 22 2026 12:22:34[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0cb38h ( 52024) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001cb60 vaddr=3fc93c00 size=0324ch ( 12876) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=0001fdb4 vaddr=40374000 size=00264h (   612) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17fc0h ( 98240) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00037fe8 vaddr=40374264 size=0f90ch ( 63756) load[0m
+[0;32mI (140) esp_image: segment 5: paddr=000478fc vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) cpu_start: Multicore app[0m
+[0;32mI (167) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (167) cpu_start: Pro cpu start user code[0m
+[0;32mI (167) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     demo2[0m
+[0;32mI (176) app_init: App version:      149042f-dirty[0m
+[0;32mI (181) app_init: Compile time:     Apr 23 2026 23:59:57[0m
+[0;32mI (186) app_init: ELF file SHA256:  fb17299e6...[0m
+[0;32mI (190) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC97870 len 00051EA0 (327 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: gd[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (251) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (261) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (267) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (334) LCD: LCD initialised (4-bit parallel)[0m
+[0;32mI (334) BTN: Buttons initialised (GPIO 48, 47, 40)[0m
+[0;33mW (334) AS5600: AS5600 not responding on I2C bus[0m
+[0;33mW (334) APP: AS5600 init failed – encoder page will show errors[0m
+[0;32mI (434) NRF24: Initial CFG readback: 0x0E (expected 0x08 after power-up)[0m
+[0;32mI (434) NRF24: === NRF24 Config Readback ===[0m
+[0;32mI (434) NRF24: CFG     = 0x0E (expected 0x0E)[0m
+[0;32mI (434) NRF24: EN_AA   = 0x01 (expected 0x01)[0m
+[0;32mI (434) NRF24: EN_RX   = 0x01 (expected 0x01)[0m
+[0;32mI (444) NRF24: SETUP_AW= 0x03 (expected 0x03)[0m
+[0;32mI (444) NRF24: RF_CH   = 76    (expected 76)[0m
+[0;32mI (454) NRF24: RF_SETUP= 0x06 (expected 0x06)[0m
+[0;32mI (454) NRF24: STATUS  = 0x0E[0m
+[0;32mI (454) NRF24: FEATURE = 0x06 (expected 0x06)[0m
+[0;32mI (464) NRF24: DYNPD   = 0x01 (expected 0x01)[0m
+[0;32mI (464) NRF24: RX_PW_P0= 20[0m
+[0;32mI (464) NRF24: =============================[0m
+[0;32mI (474) NRF24: NRF24L01 initialized OK.[0m
+[0;32mI (1674) UI: UI initialised[0m
+[1;31mE (1674) UI: Failed reading I2C Angle![0m
+[1;31mE (1774) UI: Failed reading I2C Angle![0m
+[1;31mE (1874) UI: Failed reading I2C Angle![0m
+[1;31mE (1974) UI: Failed reading I2C Angle![0m
+[1;31mE (2074) UI: Failed reading I2C Angle![0m
+[1;31mE (2174) UI: Failed reading I2C Angle![0m
+[1;31mE (2274) UI: Failed reading I2C Angle![0m
+[1;31mE (2374) UI: Failed reading I2C Angle![0m
+[1;31mE (2474) UI: Failed reading I2C Angle![0m
+[1;31mE (2574) UI: Failed reading I2C Angle![0m
+[1;31mE (2674) UI: Failed reading I2C Angle![0m
+[1;31mE (2774) UI: Failed reading I2C Angle![0m
+[1;31mE (2874) UI: Failed reading I2C Angle![0m
+[1;31mE (2974) UI: Failed reading I2C Angle![0m
+[1;31mE (3074) UI: Failed reading I2C Angle![0m
+[1;31mE (3174) UI: Failed reading I2C Angle![0m
+[1;31mE (3274) UI: Failed reading I2C Angle![0m
+[1;31mE (3374) UI: Failed reading I2C Angle![0m
+[1;31mE (3474) UI: Failed reading I2C Angle![0m
+[1;31mE (3574) UI: Failed reading I2C Angle![0m
+[1;31mE (3674) UI: Failed reading I2C Angle![0m
+[1;31mE (3774) UI: Failed reading I2C Angle![0m
+[1;31mE (3874) UI: Failed reading I2C Angle![0m
+[1;31mE (3974) UI: Failed reading I2C Angle![0m
+[1;31mE (4074) UI: Failed reading I2C Angle![0m
+[1;31mE (4174) UI: Failed reading I2C Angle![0m
+[1;31mE (4274) UI: Failed reading I2C Angle![0m
+[1;31mE (4374) UI: Failed reading I2C Angle![0m
+[1;31mE (4474) UI: Failed reading I2C Angle![0m
+[1;31mE (4574) UI: Failed reading I2C Angle![0m
+[1;31mE (4674) UI: Failed reading I2C Angle![0m
+[1;31mE (4774) UI: Failed reading I2C Angle![0m
+[1;31mE (4874) UI: Failed reading I2C Angle![0m
+[1;31mE (4974) UI: Failed reading I2C Angle![0m
+[1;31mE (5074) UI: Failed reading I2C Angle![0m
+[1;31mE (5174) UI: Failed reading I2C Angle![0m
+[1;31mE (5274) UI: Failed reading I2C Angle![0m
+[1;31mE (5374) UI: Failed reading I2C Angle![0m
+[1;31mE (5474) UI: Failed reading I2C Angle![0m
+[1;31mE (5574) UI: Failed reading I2C Angle![0m
+[1;31mE (5674) UI: Failed reading I2C Angle![0m
+[1;31mE (5774) UI: Failed reading I2C Angle![0m
+[1;31mE (5874) UI: Failed reading I2C Angle![0m
+[1;31mE (5974) UI: Failed reading I2C Angle![0m
+[1;31mE (6074) UI: Failed reading I2C Angle![0m
+[1;31mE (6174) UI: Failed reading I2C Angle![0m
+[1;31mE (6274) UI: Failed reading I2C Angle![0m
+[1;31mE (6374) UI: Failed reading I2C Angle![0m
+[1;31mE (6474) UI: Failed reading I2C Angle![0m
+[1;31mE (6574) UI: Failed reading I2C Angle![0m
+[1;31mE (6674) UI: Failed reading I2C Angle![0m
+[1;31mE (6774) UI: Failed reading I2C Angle![0m
+[1;31mE (6874) UI: Failed reading I2C Angle![0m
+[1;31mE (6974) UI: Failed reading I2C Angle![0m
+[1;31mE (7074) UI: Failed reading I2C Angle![0m
+[1;31mE (7174) UI: Failed reading I2C Angle![0m
+[1;31mE (7274) UI: Failed reading I2C Angle![0m
+[1;31mE (7374) UI: Failed reading I2C Angle![0m
+[1;31mE (7474) UI: Failed reading I2C Angle![0m
+[1;31mE (7574) UI: Failed reading I2C Angle![0m
+[1;31mE (7674) UI: Failed reading I2C Angle![0m
+[1;31mE (7774) UI: Failed reading I2C Angle![0m
+[1;31mE (7874) UI: Failed reading I2C Angle![0m
+[1;31mE (7974) UI: Failed reading I2C Angle![0m
+[1;31mE (8074) UI: Failed reading I2C Angle![0m
+[1;31mE (8174) UI: Failed reading I2C Angle![0m
+[1;31mE (8274) UI: Failed reading I2C Angle![0m
+[1;31mE (8374) UI: Failed reading I2C Angle![0m
+[1;31mE (8474) UI: Failed reading I2C Angle![0m
+[1;31mE (8574) UI: Failed reading I2C Angle![0m
+[1;31mE (8674) UI: Failed reading I2C Angle![0m
+[1;31mE (8774) UI: Failed reading I2C Angle![0m
+[1;31mE (8874) UI: Failed reading I2C Angle![0m
+[1;31mE (8974) UI: Failed reading I2C Angle![0m
+[1;31mE (9074) UI: Failed reading I2C Angle![0m
+[1;31mE (9174) UI: Failed reading I2C Angle![0m
+[1;31mE (9274) UI: Failed reading I2C Angle![0m
+[1;31mE (9374) UI: Failed reading I2C Angle![0m
+[1;31mE (9474) UI: Failed reading I2C Angle![0m
+[1;31mE (9574) UI: Failed reading I2C Angle![0m
+[1;31mE (9674) UI: Failed reading I2C Angle![0m
+[1;31mE (9774) UI: Failed reading I2C Angle![0m
+[1;31mE (9874) UI: Failed reading I2C Angle![0m
+[1;31mE (9974) UI: Failed reading I2C Angle![0m
+[1;31mE (10074) UI: Failed reading I2C Angle![0m
+[1;31mE (10174) UI: Failed reading I2C Angle![0m
+[1;31mE (10274) UI: Failed reading I2C Angle![0m
+[1;31mE (10374) UI: Failed reading I2C Angle![0m
+[1;31mE (10474) UI: Failed reading I2C Angle![0m
+[1;31mE (10574) UI: Failed reading I2C Angle![0m
+[1;31mE (10674) UI: Failed reading I2C Angle![0m
+[1;31mE (10774) UI: Failed reading I2C Angle![0m
+[1;31mE (10874) UI: Failed reading I2C Angle![0m
+[1;31mE (10974) UI: Failed reading I2C Angle![0m
+[1;31mE (11074) UI: Failed reading I2C Angle![0m
+[1;31mE (11174) UI: Failed reading I2C Angle![0m
+[1;31mE (11274) UI: Failed reading I2C Angle![0m
+[1;31mE (11374) UI: Failed reading I2C Angle![0m
+[1;31mE (11474) UI: Failed reading I2C Angle![0m
+[1;31mE (11574) UI: Failed reading I2C Angle![0m
+[1;31mE (11674) UI: Failed reading I2C Angle![0m
+[1;31mE (11774) UI: Failed reading I2C Angle![0m
+[1;31mE (11874) UI: Failed reading I2C Angle![0m
+[1;31mE (11974) UI: Failed reading I2C Angle![0m
+[1;31mE (12074) UI: Failed reading I2C Angle![0m
+[1;31mE (12174) UI: Failed reading I2C Angle![0m
+[1;31mE (12274) UI: Failed reading I2C Angle![0m
+[1;31mE (12374) UI: Failed reading I2C Angle![0m
+[1;31mE (12474) UI: Failed reading I2C Angle![0m
+[1;31mE (12574) UI: Failed reading I2C Angle![0m
+[1;31mE (12674) UI: Failed reading I2C Angle![0m
+[1;31mE (12774) UI: Failed reading I2C Angle![0m
+[1;31mE (12874) UI: Failed reading I2C Angle![0m
+[1;31mE (12974) UI: Failed reading I2C Angle![0m
+[1;31mE (13074) UI: Failed reading I2C Angle![0m
+[1;31mE (13174) UI: Failed reading I2C Angle![0m
+[1;31mE (13274) UI: Failed reading I2C Angle![0m
+[1;31mE (13374) UI: Failed reading I2C Angle![0m
+[1;31mE (13474) UI: Failed reading I2C Angle![0m
+[1;31mE (13574) UI: Failed reading I2C Angle![0m
+[1;31mE (13674) UI: Failed reading I2C Angle![0m
+[1;31mE (13774) UI: Failed reading I2C Angle![0m
+[1;31mE (13874) UI: Failed reading I2C Angle![0m
+[1;31mE (13974) UI: Failed reading I2C Angle![0m
+[1;31mE (14074) UI: Failed reading I2C Angle![0m
+[1;31mE (14174) UI: Failed reading I2C Angle![0m
+[1;31mE (14274) UI: Failed reading I2C Angle![0m
+[1;31mE (14374) UI: Failed reading I2C Angle![0m
+[1;31mE (14474) UI: Failed reading I2C Angle![0m
+[1;31mE (14574) UI: Failed reading I2C Angle![0m
+[1;31mE (14674) UI: Failed reading I2C Angle![0m
+[1;31mE (14774) UI: Failed reading I2C Angle![0m
+[1;31mE (14874) UI: Failed reading I2C Angle![0m
+[1;31mE (14974) UI: Failed reading I2C Angle![0m
+[1;31mE (15074) UI: Failed reading I2C Angle![0m
+[1;31mE (15174) UI: Failed reading I2C Angle![0m
+[1;31mE (15274) UI: Failed reading I2C Angle![0m
+[1;31mE (15374) UI: Failed reading I2C Angle![0m
+[1;31mE (15474) UI: Failed reading I2C Angle![0m
+[1;31mE (15574) UI: Failed reading I2C Angle![0m
+[1;31mE (15674) UI: Failed reading I2C Angle![0m
+[1;31mE (15774) UI: Failed reading I2C Angle![0m
+[1;31mE (15874) UI: Failed reading I2C Angle![0m
+[1;31mE (15974) UI: Failed reading I2C Angle![0m
+[1;31mE (16074) UI: Failed reading I2C Angle![0m
+[1;31mE (16174) UI: Failed reading I2C Angle![0m
+[1;31mE (16274) UI: Failed reading I2C Angle![0m
+[1;31mE (16374) UI: Failed reading I2C Angle![0m
+[1;31mE (16474) UI: Failed reading I2C Angle![0m
+[1;31mE (16574) UI: Failed reading I2C Angle![0m
+[1;31mE (16674) UI: Failed reading I2C Angle![0m
+[1;31mE (16774) UI: Failed reading I2C Angle![0m
+[1;31mE (16874) UI: Failed reading I2C Angle![0m
+[1;31mE (16974) UI: Failed reading I2C Angle![0m
+[1;31mE (17074) UI: Failed reading I2C Angle![0m
+[1;31mE (17174) UI: Failed reading I2C Angle![0m
+[1;31mE (17274) UI: Failed reading I2C Angle![0m
+[1;31mE (17374) UI: Failed reading I2C Angle![0m
+[1;31mE (17474) UI: Failed reading I2C Angle![0m
+[1;31mE (17574) UI: Failed reading I2C Angle![0m
+[1;31mE (17674) UI: Failed reading I2C Angle![0m
+[1;31mE (17774) UI: Failed reading I2C Angle![0m
+[1;31mE (17874) UI: Failed reading I2C Angle![0m
+[1;31mE (17974) UI: Failed reading I2C Angle![0m
+[1;31mE (18074) UI: Failed reading I2C Angle![0m
+[1;31mE (18174) UI: Failed reading I2C Angle![0m
+[1;31mE (18274) UI: Failed reading I2C Angle![0m
+[1;31mE (18374) UI: Failed reading I2C Angle![0m
+[1;31mE (18474) UI: Failed reading I2C Angle![0m
+[1;31mE (18574) UI: Failed reading I2C Angle![0m
+[1;31mE (18674) UI: Failed reading I2C Angle![0m
+[1;31mE (18774) UI: Failed reading I2C Angle![0m
+[1;31mE (18874) UI: Failed reading I2C Angle![0m
+[1;31mE (18974) UI: Failed reading I2C Angle![0m
+[1;31mE (19074) UI: Failed reading I2C Angle![0m
+[1;31mE (19174) UI: Failed reading I2C Angle![0m
+[1;31mE (19274) UI: Failed reading I2C Angle![0m
+[1;31mE (19374) UI: Failed reading I2C Angle![0m
+[1;31mE (19474) UI: Failed reading I2C Angle![0m
+[1;31mE (19574) UI: Failed reading I2C Angle![0m
+[1;31mE (19674) UI: Failed reading I2C Angle![0m
+[1;31mE (19774) UI: Failed reading I2C Angle![0m
+[1;31mE (19874) UI: Failed reading I2C Angle![0m
+[1;31mE (19974) UI: Failed reading I2C Angle![0m
+[1;31mE (20074) UI: Failed reading I2C Angle![0m
+[1;31mE (20174) UI: Failed reading I2C Angle![0m
+[1;31mE (20274) UI: Failed reading I2C Angle![0m
+[1;31mE (20374) UI: Failed reading I2C Angle![0m
+[1;31mE (20474) UI: Failed reading I2C Angle![0m
+[1;31mE (20574) UI: Failed reading I2C Angle![0m
+[1;31mE (20674) UI: Failed reading I2C Angle![0m
+[1;31mE (20774) UI: Failed reading I2C Angle![0m
+[1;31mE (20874) UI: Failed reading I2C Angle![0m
+[1;31mE (20974) UI: Failed reading I2C Angle![0m
+[1;31mE (21074) UI: Failed reading I2C Angle![0m
+[1;31mE (21174) UI: Failed reading I2C Angle![0m
+[1;31mE (21274) UI: Failed reading I2C Angle![0m
+[1;31mE (21374) UI: Failed reading I2C Angle![0m
+[1;31mE (21474) UI: Failed reading I2C Angle![0m
+[1;31mE (21574) UI: Failed reading I2C Angle![0m
+[1;31mE (21674) UI: Failed reading I2C Angle![0m
+[1;31mE (21774) UI: Failed reading I2C Angle![0m
+[1;31mE (21874) UI: Failed reading I2C Angle![0m
+[1;31mE (21974) UI: Failed reading I2C Angle![0m
+[1;31mE (22074) UI: Failed reading I2C Angle![0m
+[1;31mE (22174) UI: Failed reading I2C Angle![0m
+[1;31mE (22274) UI: Failed reading I2C Angle![0m
+[1;31mE (22374) UI: Failed reading I2C Angle![0m
+[1;31mE (22474) UI: Failed reading I2C Angle![0m
+[1;31mE (22574) UI: Failed reading I2C Angle![0m
+[1;31mE (22674) UI: Failed reading I2C Angle![0m
+[1;31mE (22774) UI: Failed reading I2C Angle![0m
+[1;31mE (22874) UI: Failed reading I2C Angle![0m
+[1;31mE (22974) UI: Failed reading I2C Angle![0m
+[1;31mE (23074) UI: Failed reading I2C Angle![0m
+[1;31mE (23174) UI: Failed reading I2C Angle![0m
+[1;31mE (23274) UI: Failed reading I2C Angle![0m
+[1;31mE (23374) UI: Failed reading I2C Angle![0m
+[1;31mE (23474) UI: Failed reading I2C Angle![0m
+[1;31mE (23574) UI: Failed reading I2C Angle![0m
+[1;31mE (23674) UI: Failed reading I2C Angle![0m
+[1;31mE (23774) UI: Failed reading I2C Angle![0m
+[1;31mE (23874) UI: Failed reading I2C Angle![0m
+[1;31mE (23974) UI: Failed reading I2C Angle![0m
+[1;31mE (24074) UI: Failed reading I2C Angle![0m
+[1;31mE (24174) UI: Failed reading I2C Angle![0m
+[1;31mE (24274) UI: Failed reading I2C Angle![0m
+[1;31mE (24374) UI: Failed reading I2C Angle![0m
+[1;31mE (24474) UI: Failed reading I2C Angle![0m
+[1;31mE (24574) UI: Failed reading I2C Angle![0m
+[1;31mE (24674) UI: Failed reading I2C Angle![0m
+[1;31mE (24774) UI: Failed reading I2C Angle![0m
+[1;31mE (24874) UI: Failed reading I2C Angle![0m
+[1;31mE (24974) UI: Failed reading I2C Angle![0m
+[1;31mE (25074) UI: Failed reading I2C Angle![0m
+[1;31mE (25174) UI: Failed reading I2C Angle![0m
+[1;31mE (25274) UI: Failed reading I2C Angle![0m
+[1;31mE (25374) UI: Failed reading I2C Angle![0m
+[1;31mE (25474) UI: Failed reading I2C Angle![0m
+[1;31mE (25574) UI: Failed reading I2C Angle![0m
+[1;31mE (25674) UI: Failed reading I2C Angle![0m
+[1;31mE (25774) UI: Failed reading I2C Angle![0m
+[1;31mE (25874) UI: Failed reading I2C Angle![0m
+[1;31mE (25974) UI: Failed reading I2C Angle![0m
+[1;31mE (26074) UI: Failed reading I2C Angle![0m
+[1;31mE (26174) UI: Failed reading I2C Angle![0m
+[1;31mE (26274) UI: Failed reading I2C Angle![0m
+[1;31mE (26374) UI: Failed reading I2C Angle![0m
+[1;31mE (26474) UI: Failed reading I2C Angle![0m
+[1;31mE (26574) UI: Failed reading I2C Angle![0m
+[1;31mE (26674) UI: Failed reading I2C Angle![0m
+[1;31mE (26774) UI: Failed reading I2C Angle![0m
+[1;31mE (26874) UI: Failed reading I2C Angle![0m
+[1;31mE (26974) UI: Failed reading I2C Angle![0m
+[1;31mE (27074) UI: Failed reading I2C Angle![0m
+[1;31mE (27174) UI: Failed reading I2C Angle![0m
+[1;31mE (27274) UI: Failed reading I2C Angle![0m
+[1;31mE (27374) UI: Failed reading I2C Angle![0m
+[1;31mE (27474) UI: Failed reading I2C Angle![0m
+[1;31mE (27574) UI: Failed reading I2C Angle![0m
+[1;31mE (27674) UI: Failed reading I2C Angle![0m
+[1;31mE (27774) UI: Failed reading I2C Angle![0m
+[1;31mE (27874) UI: Failed reading I2C Angle![0m
+[1;31mE (27974) UI: Failed reading I2C Angle![0m
+[1;31mE (28074) UI: Failed reading I2C Angle![0m
+[1;31mE (28174) UI: Failed reading I2C Angle![0m
+[1;31mE (28274) UI: Failed reading I2C Angle![0m
+[1;31mE (28374) UI: Failed reading I2C Angle![0m
+[1;31mE (28474) UI: Failed reading I2C Angle![0m
+[1;31mE (28574) UI: Failed reading I2C Angle![0m
+[1;31mE (28674) UI: Failed reading I2C Angle![0m
+[1;31mE (28774) UI: Failed reading I2C Angle![0m
+[1;31mE (28874) UI: Failed reading I2C Angle![0m
+[1;31mE (28974) UI: Failed reading I2C Angle![0m
+[1;31mE (29074) UI: Failed reading I2C Angle![0m
+[1;31mE (29174) UI: Failed reading I2C Angle![0m
+[1;31mE (29274) UI: Failed reading I2C Angle![0m
+[1;31mE (29374) UI: Failed reading I2C Angle![0m
+[1;31mE (29474) UI: Failed reading I2C Angle![0m
+[1;31mE (29574) UI: Failed reading I2C Angle![0m
+[1;31mE (29674) UI: Failed reading I2C Angle![0m
+[1;31mE (29774) UI: Failed reading I2C Angle![0m
+[1;31mE (29874) UI: Failed reading I2C Angle![0m
+[1;31mE (29974) UI: Failed reading I2C Angle![0m
+[1;31mE (30074) UI: Failed reading I2C Angle![0m
+[1;31mE (30174) UI: Failed reading I2C Angle![0m
+[1;31mE (30274) UI: Failed reading I2C Angle![0m
+[1;31mE (30374) UI: Failed reading I2C Angle![0m
+[1;31mE (30474) UI: Failed reading I2C Angle![0m
+[1;31mE (30574) UI: Failed reading I2C Angle![0m
+[1;31mE (30674) UI: Failed reading I2C Angle![0m
+[1;31mE (30774) UI: Failed reading I2C Angle![0m
+[1;31mE (30874) UI: Failed reading I2C Angle![0m
+[1;31mE (30974) UI: Failed reading I2C Angle![0m
+[1;31mE (31074) UI: Failed reading I2C Angle![0m
+[1;31mE (31174) UI: Failed reading I2C Angle![0m
+[1;31mE (31274) UI: Failed reading I2C Angle![0m
+[1;31mE (31374) UI: Failed reading I2C Angle![0m
+[1;31mE (31474) UI: Failed reading I2C Angle![0m
+[1;31mE (31574) UI: Failed reading I2C Angle![0m
+[1;31mE (31674) UI: Failed reading I2C Angle![0m
+[1;31mE (31774) UI: Failed reading I2C Angle![0m
+[1;31mE (31874) UI: Failed reading I2C Angle![0m
+[1;31mE (31974) UI: Failed reading I2C Angle![0m
+[1;31mE (32074) UI: Failed reading I2C Angle![0m
+[1;31mE (32174) UI: Failed reading I2C Angle![0m
+[1;31mE (32274) UI: Failed reading I2C Angle![0m
+[1;31mE (32374) UI: Failed reading I2C Angle![0m
+[1;31mE (32474) UI: Failed reading I2C Angle![0m
+[1;31mE (32574) UI: Failed reading I2C Angle![0m
+[1;31mE (32674) UI: Failed reading I2C Angle![0m
+[1;31mE (32774) UI: Failed reading I2C Angle![0m
+[1;31mE (32874) UI: Failed reading I2C Angle![0m
+[1;31mE (32974) UI: Failed reading I2C Angle![0m
+[1;31mE (33074) UI: Failed reading I2C Angle![0m
+[1;31mE (33174) UI: Failed reading I2C Angle![0m
+[1;31mE (33274) UI: Failed reading I2C Angle![0m
+[1;31mE (33374) UI: Failed reading I2C Angle![0m
+[1;31mE (33474) UI: Failed reading I2C Angle![0m
+[1;31mE (33574) UI: Failed reading I2C Angle![0m
+[1;31mE (33674) UI: Failed reading I2C Angle![0m
+[1;31mE (33774) UI: Failed reading I2C Angle![0m
+[1;31mE (33874) UI: Failed reading I2C Angle![0m
+[1;31mE (33974) UI: Failed reading I2C Angle![0m
+[1;31mE (34074) UI: Failed reading I2C Angle![0m
+[1;31mE (34174) UI: Failed reading I2C Angle![0m
+[1;31mE (34274) UI: Failed reading I2C Angle![0m
+[1;31mE (34374) UI: Failed reading I2C Angle![0m
+[1;31mE (34474) UI: Failed reading I2C Angle![0m
+[1;31mE (34574) UI: Failed reading I2C Angle![0m
+[1;31mE (34674) UI: Failed reading I2C Angle![0m
+[1;31mE (34774) UI: Failed reading I2C Angle![0m
+[1;31mE (34874) UI: Failed reading I2C Angle![0m
+[1;31mE (34974) UI: Failed reading I2C Angle![0m
+[1;31mE (35074) UI: Failed reading I2C Angle![0m
+[1;31mE (35174) UI: Failed reading I2C Angle![0m
+[1;31mE (35274) UI: Failed reading I2C Angle![0m
+[1;31mE (35374) UI: Failed reading I2C Angle![0m
+[1;31mE (35474) UI: Failed reading I2C Angle![0m
+[1;31mE (35574) UI: Failed reading I2C Angle![0m
+[1;31mE (35674) UI: Failed reading I2C Angle![0m
+[1;31mE (35774) UI: Failed reading I2C Angle![0m
+[1;31mE (35874) UI: Failed reading I2C Angle![0m
+[1;31mE (35974) UI: Failed reading I2C Angle![0m
+[1;31mE (36074) UI: Failed reading I2C Angle![0m
+[1;31mE (36174) UI: Failed reading I2C Angle![0m
+[1;31mE (36274) UI: Failed reading I2C Angle![0m
+[1;31mE (36374) UI: Failed reading I2C Angle![0m
+[1;31mE (36474) UI: Failed reading I2C Angle![0m
+[1;31mE (36574) UI: Failed reading I2C Angle![0m
+[1;31mE (36674) UI: Failed reading I2C Angle![0m
+[1;31mE (36774) UI: Failed reading I2C Angle![0m
+[1;31mE (36874) UI: Failed reading I2C Angle![0m
+[1;31mE (36974) UI: Failed reading I2C Angle![0m
+[1;31mE (37074) UI: Failed reading I2C Angle![0m
+[1;31mE (37174) UI: Failed reading I2C Angle![0m
+[1;31mE (37274) UI: Failed reading I2C Angle![0m
+[1;31mE (37374) UI: Failed reading I2C Angle![0m
+[1;31mE (37474) UI: Failed reading I2C Angle![0m
+[1;31mE (37574) UI: Failed reading I2C Angle![0m
+[1;31mE (37674) UI: Failed reading I2C Angle![0m
+[1;31mE (37774) UI: Failed reading I2C Angle![0m
+[1;31mE (37874) UI: Failed reading I2C Angle![0m
+[1;31mE (37974) UI: Failed reading I2C Angle![0m
+[1;31mE (38074) UI: Failed reading I2C Angle![0m
+[1;31mE (38174) UI: Failed reading I2C Angle![0m
+[1;31mE (38274) UI: Failed reading I2C Angle![0m
+[1;31mE (38374) UI: Failed reading I2C Angle![0m
+[1;31mE (38474) UI: Failed reading I2C Angle![0m
+[1;31mE (38574) UI: Failed reading I2C Angle![0m
+[1;31mE (38674) UI: Failed reading I2C Angle![0m
+[1;31mE (38774) UI: Failed reading I2C Angle![0m
+[1;31mE (38874) UI: Failed reading I2C Angle![0m
+[1;31mE (38974) UI: Failed reading I2C Angle![0m
+[1;31mE (39074) UI: Failed reading I2C Angle![0m
+[1;31mE (39174) UI: Failed reading I2C Angle![0m
+[1;31mE (39274) UI: Failed reading I2C Angle![0m
+[1;31mE (39374) UI: Failed reading I2C Angle![0m
+[1;31mE (39474) UI: Failed reading I2C Angle![0m
+[1;31mE (39574) UI: Failed reading I2C Angle![0m
+[1;31mE (39674) UI: Failed reading I2C Angle![0m
+[1;31mE (39774) UI: Failed reading I2C Angle![0m
+[1;31mE (39874) UI: Failed reading I2C Angle![0m
+[1;31mE (39974) UI: Failed reading I2C Angle![0m
+[1;31mE (40074) UI: Failed reading I2C Angle![0m
+[1;31mE (40174) UI: Failed reading I2C Angle![0m
+[1;31mE (40274) UI: Failed reading I2C Angle![0m
+[1;31mE (40374) UI: Failed reading I2C Angle![0m
+[1;31mE (40474) UI: Failed reading I2C Angle![0m
+[1;31mE (40574) UI: Failed reading I2C Angle![0m
+[1;31mE (40674) UI: Failed reading I2C Angle![0m
+[1;31mE (40774) UI: Failed reading I2C Angle![0m
+[1;31mE (40874) UI: Failed reading I2C Angle![0m
+[1;31mE (40974) UI: Failed reading I2C Angle![0m
+[1;31mE (41074) UI: Failed reading I2C Angle![0m
+[1;31mE (41174) UI: Failed reading I2C Angle![0m
+[1;31mE (41274) UI: Failed reading I2C Angle![0m
+[1;31mE (41374) UI: Failed reading I2C Angle![0m
+[1;31mE (41474) UI: Failed reading I2C Angle![0m
+[1;31mE (41574) UI: Failed reading I2C Angle![0m
+[1;31mE (41674) UI: Failed reading I2C Angle![0m
+[1;31mE (41774) UI: Failed reading I2C Angle![0m
+[1;31mE (41874) UI: Failed reading I2C Angle![0m
+[1;31mE (41974) UI: Failed reading I2C Angle![0m
+[1;31mE (42074) UI: Failed reading I2C Angle![0m
+[1;31mE (42174) UI: Failed reading I2C Angle![0m
+[1;31mE (42274) UI: Failed reading I2C Angle![0m
+[1;31mE (42374) UI: Failed reading I2C Angle![0m
+[1;31mE (42474) UI: Failed reading I2C Angle![0m
+[1;31mE (42574) UI: Failed reading I2C Angle![0m
+[1;31mE (42674) UI: Failed reading I2C Angle![0m
+[1;31mE (42774) UI: Failed reading I2C Angle![0m
+[1;31mE (42874) UI: Failed reading I2C Angle![0m
+[1;31mE (42974) UI: Failed reading I2C Angle![0m
+[1;31mE (43074) UI: Failed reading I2C Angle![0m
+[1;31mE (43174) UI: Failed reading I2C Angle![0m
+[1;31mE (43274) UI: Failed reading I2C Angle![0m
+[1;31mE (43374) UI: Failed reading I2C Angle![0m
+[1;31mE (43474) UI: Failed reading I2C Angle![0m
+[1;31mE (43574) UI: Failed reading I2C Angle![0m
+[1;31mE (43674) UI: Failed reading I2C Angle![0m
+[1;31mE (43774) UI: Failed reading I2C Angle![0m
+[1;31mE (43874) UI: Failed reading I2C Angle![0m
+[1;31mE (43974) UI: Failed reading I2C Angle![0m
+[1;31mE (44074) UI: Failed reading I2C Angle![0m
+[1;31mE (44174) UI: Failed reading I2C Angle![0m
+[1;31mE (44274) UI: Failed reading I2C Angle![0m
+[1;31mE (44374) UI: Failed reading I2C Angle![0m
+[1;31mE (44474) UI: Failed reading I2C Angle![0m
+[1;31mE (44574) UI: Failed reading I2C Angle![0m
+[1;31mE (44674) UI: Failed reading I2C Angle![0m
+[1;31mE (44774) UI: Failed reading I2C Angle![0m
+[1;31mE (44874) UI: Failed reading I2C Angle![0m
+[1;31mE (44974) UI: Failed reading I2C Angle![0m
+[1;31mE (45074) UI: Failed reading I2C Angle![0m
+[1;31mE (45174) UI: Failed reading I2C Angle![0m
+[1;31mE (45274) UI: Failed reading I2C Angle![0m
+[1;31mE (45374) UI: Failed reading I2C Angle![0m
+[1;31mE (45474) UI: Failed reading I2C Angle![0m
+[1;31mE (45574) UI: Failed reading I2C Angle![0m
+[1;31mE (45674) UI: Failed reading I2C Angle![0m
+[1;31mE (45774) UI: Failed reading I2C Angle![0m
+[1;31mE (45874) UI: Failed reading I2C Angle![0m
+[1;31mE (45974) UI: Failed reading I2C Angle![0m
+[1;31mE (46074) UI: Failed reading I2C Angle![0m
+[1;31mE (46174) UI: Failed reading I2C Angle![0m
+[1;31mE (46274) UI: Failed reading I2C Angle![0m
+[1;31mE (46374) UI: Failed reading I2C Angle![0m
+[1;31mE (46474) UI: Failed reading I2C Angle![0m
+[1;31mE (46574) UI: Failed reading I2C Angle![0m
+[1;31mE (46674) UI: Failed reading I2C Angle![0m
+[1;31mE (46774) UI: Failed reading I2C Angle![0m
+[1;31mE (46874) UI: Failed reading I2C Angle![0m
+[1;31mE (46974) UI: Failed reading I2C Angle![0m
+[1;31mE (47074) UI: Failed reading I2C Angle![0m
+[1;31mE (47174) UI: Failed reading I2C Angle![0m
+[1;31mE (47274) UI: Failed reading I2C Angle![0m
+[1;31mE (47374) UI: Failed reading I2C Angle![0m
+[1;31mE (47474) UI: Failed reading I2C Angle![0m
+[1;31mE (47574) UI: Failed reading I2C Angle![0m
+[1;31mE (47674) UI: Failed reading I2C Angle![0m
+[1;31mE (47774) UI: Failed reading I2C Angle![0m
+[1;31mE (47874) UI: Failed reading I2C Angle![0m
+[1;31mE (47974) UI: Failed reading I2C Angle![0m
+[1;31mE (48074) UI: Failed reading I2C Angle![0m

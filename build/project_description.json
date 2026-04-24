@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "demo2",
-    "project_version":    "1",
+    "project_version":    "149042f-dirty",
     "project_path":       "C:/Users/emilr/demo2",
     "idf_path":           "C:/esp/v6.0/esp-idf",
     "build_dir":          "C:/Users/emilr/demo2/build",
@@ -1735,7 +1735,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/emilr/demo2/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/emilr/demo2/main/arm_protocol.c", "C:/Users/emilr/demo2/main/demo2.c", "C:/Users/emilr/demo2/main/lcd.c", "C:/Users/emilr/demo2/main/as5600.c", "C:/Users/emilr/demo2/main/buttons.c", "C:/Users/emilr/demo2/main/ui.c", "C:/Users/emilr/demo2/main/nrf24.c" ],
+            "sources": [ "C:/Users/emilr/demo2/main/nrf_telemetry_task.c", "C:/Users/emilr/demo2/main/arm_protocol.c", "C:/Users/emilr/demo2/main/demo2.c", "C:/Users/emilr/demo2/main/lcd.c", "C:/Users/emilr/demo2/main/as5600.c", "C:/Users/emilr/demo2/main/buttons.c", "C:/Users/emilr/demo2/main/ui.c", "C:/Users/emilr/demo2/main/nrf24.c", "C:/Users/emilr/demo2/main/encoder_mux.c", "C:/Users/emilr/demo2/main/io_control.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

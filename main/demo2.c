@@ -13,12 +13,16 @@
 #include "nrf24.h"
 #include "arm_protocol.h"
 #include "ui.h"
+#include "encoder_mux.h"
+#include "nrf_telemetry_task.h"
+#include "io_control.h"
 
 static const char *TAG = "APP";
 
 void app_main(void)
 {
     /* Initialise all hardware */
+    io_control_init();
     lcd_init();
     buttons_init();
 
@@ -34,6 +38,12 @@ void app_main(void)
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "NRF24L01 Init Failed");
     }
+
+    /* Start the multiplexed encoder I2C task (5Hz) */
+    encoder_mux_start();
+
+    /* Start the dedicated NRF telemetry link task (50Hz) */
+    nrf_telemetry_start();
 
     /* Start the menu UI (never returns) */
     ui_init();

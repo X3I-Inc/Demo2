@@ -277,3 +277,41 @@ esp_err_t nrf24_transmit(const uint8_t *data, uint8_t len)
 
     return ESP_OK;
 }
+
+uint8_t nrf24_receive(uint8_t *data, uint8_t max_len)
+{
+    uint8_t status = nrf_read_register_byte(REG_STATUS);
+    if (!(status & 0x40)) { /* RX_DR not set */
+        return 0;
+    }
+
+    /* Read dynamic payload length */
+    gpio_set_level(NRF_CSN_PIN, 0);
+    spi_transfer_byte(0x60); // R_RX_PL_WID
+    uint8_t len = spi_transfer_byte(0xFF);
+    gpio_set_level(NRF_CSN_PIN, 1);
+
+    if (len > 32) {
+        nrf_command(FLUSH_RX);
+        nrf_write_register_byte(REG_STATUS, 0x40);
+        return 0;
+    }
+
+    /* Read payload data */
+    gpio_set_level(NRF_CSN_PIN, 0);
+    spi_transfer_byte(R_RX_PAYLOAD);
+    uint8_t actual_len = 0;
+    for (uint8_t i = 0; i < len; i++) {
+        uint8_t val = spi_transfer_byte(0xFF);
+        if (i < max_len) {
+            data[i] = val;
+            actual_len++;
+        }
+    }
+    gpio_set_level(NRF_CSN_PIN, 1);
+
+    /* Clear RX_DR flag */
+    nrf_write_register_byte(REG_STATUS, 0x40);
+
+    return actual_len;
+}
